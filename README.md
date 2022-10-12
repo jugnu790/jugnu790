@@ -12,9 +12,9 @@
 
 - 💬 Ask me about **MERN Stack**
 
-- 📫 How to reach me **deepeshupadhyay8790@gmail.com**
+- 📫 How to reach me **deepeshupadhyay85@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1UpdZBpg1k8z5Y5ovU8Bo1HqqT5IrdDYE/view?usp=sharing](https://drive.google.com/file/d/1UpdZBpg1k8z5Y5ovU8Bo1HqqT5IrdDYE/view?usp=sharing)
+- 📄 Know about my experiences [https://drive.google.com/file/d/1W03yuQgyHpWe2ywA7FJLezPXzjTbj1Jv/view?usp=sharing
 
 - ⚡ Fun fact **Coding Bugs were NOT named after an actual bug.**
 
