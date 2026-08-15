@@ -1,35 +1,298 @@
+<div align="center">
 
-<h1 align="center">Hi 👋, I'm Deepesh Upadhyay</h1>
-<h3 align="center">A passionate full stack developer from India</h3>
+<!-- Animated Header -->
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=jugnu790&label=Profile%20views&color=0e75b6&style=flat" alt="jugnu790" /> </p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=220&section=header&text=Deepesh%20Upadhyay&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Full%20Stack%20Developer%20%7C%20Software%20Engineer%20%7C%20Problem%20Solver&descAlignY=60&descSize=18&animation=fadeIn" width="100%"/>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=jugnu790" alt="jugnu790" /></a> </p>
+<a href="https://github.com/jugnu790">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=Full+Stack+Developer;MERN+Stack+Developer;Java+%7C+JavaScript+Developer;DSA+%26+Problem+Solving+Enthusiast;DevOps+%26+Cloud+Learner;Building+Scalable+%26+Practical+Software" alt="Typing SVG"/>
+</a>
 
-- 🌱 I’m currently learning **DSA and DevOps Tool**
+<br/>
 
-- 👨‍💻 All of my projects are available at [https://github.com/jugnu790](https://github.com/jugnu790)
+<img src="https://komarev.com/ghpvc/?username=jugnu790&label=Profile%20Views&color=0e75b6&style=for-the-badge" alt="Profile Views"/>
 
-- 💬 Ask me about **MERN Stack**
+<br/><br/>
 
-- 📫 How to reach me **deepeshupadhyay85@gmail.com**
+<a href="https://github.com/jugnu790">
+<img src="https://img.shields.io/github/followers/jugnu790?label=Followers&style=for-the-badge&color=236ad3"/>
+</a>
+<a href="https://github.com/jugnu790?tab=repositories">
+<img src="https://img.shields.io/github/stars/jugnu790?affiliations=OWNER&style=for-the-badge&color=yellow"/>
+</a>
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1W03yuQgyHpWe2ywA7FJLezPXzjTbj1Jv/view?usp=sharing
+</div>
 
-- ⚡ Fun fact **Coding Bugs were NOT named after an actual bug.**
+---
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/maradox" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="maradox" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/https://auth.geeksforgeeks.org/user/deepeshupadhyay85/practice/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="https://auth.geeksforgeeks.org/user/deepeshupadhyay85/practice/" height="30" width="40" /></a>
+## 👨‍💻 About Me
+
+```text
+👋 Hi, I'm Deepesh Upadhyay
+
+💻 Full Stack Developer from India
+🚀 Focused on building scalable and production-ready applications
+🧠 Strong interest in DSA, backend engineering and system design
+🌐 Experienced with MERN Stack and modern web technologies
+☁️ Exploring Cloud, DevOps, Docker, Kubernetes and AWS
+☕ Java + JavaScript enthusiast
+🔧 I enjoy solving problems and turning ideas into working products
+```
+
+### 🎯 What I'm Currently Doing
+
+* 🌱 Learning **DSA, DevOps, Cloud & System Design**
+* 💻 Building projects using **MERN Stack + Java**
+* ☁️ Exploring **AWS, Docker, Kubernetes & CI/CD**
+* 🧩 Improving **problem-solving and competitive programming**
+* 📚 Continuously learning software engineering best practices
+
+---
+
+## 💼 Professional Profile
+
+### 🚀 Software Development
+
+I work across the full development lifecycle — from designing interfaces and APIs to database integration, deployment and application infrastructure.
+
+### 🔥 Areas I Work With
+
+```text
+Frontend        → React.js • JavaScript • HTML • CSS • Redux • Tailwind
+Backend         → Node.js • Express.js • Java
+Database        → MongoDB • MySQL • Firebase
+Cloud           → AWS
+DevOps          → Docker • Kubernetes • Linux • Nginx • Git
+Tools           → Postman • Git • GitHub
+Mobile          → React Native
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### 💻 Languages
+
+<p align="center">
+<a href="https://www.java.com/">
+<img src="https://skillicons.dev/icons?i=java" width="55"/>
+</a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+<img src="https://skillicons.dev/icons?i=javascript" width="55"/>
+</a>
+<a href="https://www.w3.org/html/">
+<img src="https://skillicons.dev/icons?i=html" width="55"/>
+</a>
+<a href="https://www.w3.org/Style/CSS/">
+<img src="https://skillicons.dev/icons?i=css" width="55"/>
+</a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+### 🎨 Frontend
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=jugnu790&show_icons=true&locale=en&layout=compact" alt="jugnu790" /></p>
+<p align="center">
+<img src="https://skillicons.dev/icons?i=react,redux,tailwind,bootstrap,babel" />
+</p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=jugnu790&show_icons=true&locale=en" alt="jugnu790" /></p>
+### ⚙️ Backend
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=jugnu790&" alt="jugnu790" /></p>
+<p align="center">
+<img src="https://skillicons.dev/icons?i=nodejs,express,java" />
+</p>
+
+### 🗄️ Databases & Backend Services
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,firebase" />
+</p>
+
+### ☁️ Cloud & DevOps
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,linux,nginx,git,github" />
+</p>
+
+### 🔧 Tools
+
+<p align="center">
+<img src="https://skillicons.dev/icons?i=postman,vscode,idea" />
+</p>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=jugnu790&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="180"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jugnu790&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" height="180"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=jugnu790&theme=tokyonight&hide_border=true" width="80%"/>
+
+</div>
+
+---
+
+## 🏆 GitHub Achievements
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=jugnu790&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&row=2&column=4" width="90%"/>
+
+</div>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jugnu790&theme=tokyo-night&hide_border=true&area=true" width="100%"/>
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg" alt="Contribution Snake"/>
+
+</div>
+
+---
+
+## 🚀 Featured Projects
+
+<div align="center">
+
+<a href="https://github.com/jugnu790?tab=repositories">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=jugnu790&repo=IIT-M&theme=tokyonight&hide_border=true" />
+</a>
+
+</div>
+
+> More projects and source code are available in my repositories.
+
+🔗 **[Explore All Repositories →](https://github.com/jugnu790?tab=repositories)**
+
+---
+
+## 🧠 Problem Solving
+
+<div align="center">
+
+<a href="https://leetcode.com/maradox/">
+<img src="https://leetcard.jacoblin.cool/maradox?theme=dark&font=baloo&ext=contest" width="500"/>
+</a>
+
+</div>
+
+### Competitive Programming Profiles
+
+<p align="center">
+
+<a href="https://leetcode.com/maradox/">
+<img src="https://img.shields.io/badge/LeetCode-maradox-orange?style=for-the-badge&logo=leetcode&logoColor=white"/>
+</a>
+
+<a href="https://auth.geeksforgeeks.org/user/deepeshupadhyay85/practice/">
+<img src="https://img.shields.io/badge/GeeksforGeeks-Deepesh%20Upadhyay-green?style=for-the-badge&logo=geeksforgeeks&logoColor=white"/>
+</a>
+
+</p>
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/">
+<img src="https://img.shields.io/badge/LinkedIn-Deepesh%20Upadhyay-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+<a href="mailto:deepeshupadhyay85@gmail.com">
+<img src="https://img.shields.io/badge/Email-deepeshupadhyay85%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+</a>
+
+<a href="https://github.com/jugnu790">
+<img src="https://img.shields.io/badge/GitHub-jugnu790-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+
+</div>
+
+---
+
+## 📄 Resume
+
+<div align="center">
+
+<a href="https://drive.google.com/file/d/1W03yuQgyHpWe2ywA7FJLezPXzjTbj1Jv/view?usp=sharing">
+<img src="https://img.shields.io/badge/View%20My%20Resume-4285F4?style=for-the-badge&logo=googledrive&logoColor=white"/>
+</a>
+
+</div>
+
+---
+
+## 💡 My Development Philosophy
+
+> **Build. Break. Learn. Improve. Repeat.**
+
+I believe the best way to become a better engineer is to continuously build real things, solve difficult problems, understand why systems fail, and improve them.
+
+---
+
+## ⚡ Fun Fact
+
+```text
+🐛 "Bug" in software wasn't originally named after the insect.
+
+💡 One of the most famous early programming bugs involved
+   an actual moth found inside a Harvard Mark II computer.
+
+   So yes... sometimes the bug really was a bug. 🐛
+```
+
+---
+
+## 🎯 2026 Goals
+
+```text
+[████████████████████░░] 80%  → Master DSA
+[███████████████░░░░░░░] 65%  → DevOps & Cloud
+[██████████████░░░░░░░░] 60%  → System Design
+[████████████░░░░░░░░░░] 55%  → Open Source
+[██████████░░░░░░░░░░░░] 45%  → Build Production Projects
+```
+
+---
+
+## 📫 Contact
+
+**Email:** [deepeshupadhyay85@gmail.com](mailto:deepeshupadhyay85@gmail.com)
+
+**LinkedIn:** [Deepesh Upadhyay](https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/)
+
+**GitHub:** [@jugnu790](https://github.com/jugnu790)
+
+**LeetCode:** [@maradox](https://leetcode.com/maradox/)
+
+---
+
+<div align="center">
+
+### ⭐ Thanks for visiting my profile!
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer" width="100%"/>
+
+</div>
