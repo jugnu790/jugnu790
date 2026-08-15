@@ -1,4 +1,4 @@
-name: Generate GitHub Contribution Snake
+name: 📊 Generate GitHub Profile Cards
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "30 */12 * * *"
 
   workflow_dispatch:
 
@@ -15,32 +15,479 @@ permissions:
 
 jobs:
   generate:
+    name: Generate Profile Analytics
     runs-on: ubuntu-latest
 
     steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
 
-      # --------------------------------
-      # Generate contribution snake
-      # --------------------------------
-
-      - name: Generate contribution snake
-        uses: Platane/snk/svg-only@v3
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
         with:
-          github_user_name: jugnu790
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          python-version: "3.x"
 
-
-      # --------------------------------
-      # Publish to output branch
-      # --------------------------------
-
-      - name: Publish snake
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          build_dir: dist
-          target_branch: output
-          commit_message: "Update GitHub contribution snake"
+      - name: 📊 Generate profile cards
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: jugnu790
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.request
+          from pathlib import Path
+          from html import escape
+
+          USERNAME = os.environ["USERNAME"]
+          TOKEN = os.environ["GH_TOKEN"]
+
+          HEADERS = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {TOKEN}",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "User-Agent": "jugnu790-profile-cards"
+          }
+
+          def github_api(url):
+              request = urllib.request.Request(
+                  url,
+                  headers=HEADERS
+              )
+
+              with urllib.request.urlopen(request) as response:
+                  return json.load(response)
+
+          # ---------------------------------------------------------
+          # GitHub profile
+          # ---------------------------------------------------------
+
+          profile = github_api(
+              f"https://api.github.com/users/{USERNAME}"
+          )
+
+          # ---------------------------------------------------------
+          # Repositories
+          # ---------------------------------------------------------
+
+          repos = github_api(
+              f"https://api.github.com/users/{USERNAME}/repos?per_page=100&sort=updated"
+          )
+
+          # ---------------------------------------------------------
+          # Language statistics
+          # ---------------------------------------------------------
+
+          languages = {}
+
+          for repo in repos:
+              language = repo.get("language")
+
+              if language:
+                  languages[language] = languages.get(language, 0) + 1
+
+          top_languages = sorted(
+              languages.items(),
+              key=lambda item: item[1],
+              reverse=True
+          )[:8]
+
+          # ---------------------------------------------------------
+          # Repository statistics
+          # ---------------------------------------------------------
+
+          stars = sum(
+              repo.get("stargazers_count", 0)
+              for repo in repos
+          )
+
+          forks = sum(
+              repo.get("forks_count", 0)
+              for repo in repos
+          )
+
+          watchers = sum(
+              repo.get("watchers_count", 0)
+              for repo in repos
+          )
+
+          # ---------------------------------------------------------
+          # Output directory
+          # ---------------------------------------------------------
+
+          output = Path("profile")
+          output.mkdir(exist_ok=True)
+
+          # ---------------------------------------------------------
+          # SVG helper
+          # ---------------------------------------------------------
+
+          def svg(title, body, height=210):
+              return f'''
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="495"
+                height="{height}"
+                viewBox="0 0 495 {height}"
+              >
+
+                <defs>
+                  <linearGradient
+                    id="background"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stop-color="#161b22"/>
+                    <stop offset="100%" stop-color="#0d1117"/>
+                  </linearGradient>
+
+                  <linearGradient
+                    id="accent"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stop-color="#00c853"/>
+                    <stop offset="100%" stop-color="#00e676"/>
+                  </linearGradient>
+                </defs>
+
+                <rect
+                  width="495"
+                  height="{height}"
+                  rx="16"
+                  fill="url(#background)"
+                  stroke="#30363d"
+                />
+
+                <rect
+                  x="0"
+                  y="0"
+                  width="495"
+                  height="5"
+                  rx="3"
+                  fill="url(#accent)"
+                />
+
+                <text
+                  x="28"
+                  y="42"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="22"
+                  font-weight="700"
+                  fill="#ffffff"
+                >
+                  {escape(title)}
+                </text>
+
+                {body}
+
+              </svg>
+              '''
+
+          # ---------------------------------------------------------
+          # GitHub Analytics Card
+          # ---------------------------------------------------------
+
+          stats = f'''
+          <text
+            x="28"
+            y="78"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            PUBLIC REPOSITORIES
+          </text>
+
+          <text
+            x="28"
+            y="108"
+            font-family="Arial"
+            font-size="27"
+            font-weight="700"
+            fill="#00e676"
+          >
+            {profile.get("public_repos", 0)}
+          </text>
+
+          <text
+            x="175"
+            y="78"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            FOLLOWERS
+          </text>
+
+          <text
+            x="175"
+            y="108"
+            font-family="Arial"
+            font-size="27"
+            font-weight="700"
+            fill="#00e676"
+          >
+            {profile.get("followers", 0)}
+          </text>
+
+          <text
+            x="325"
+            y="78"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            STARS
+          </text>
+
+          <text
+            x="325"
+            y="108"
+            font-family="Arial"
+            font-size="27"
+            font-weight="700"
+            fill="#00e676"
+          >
+            {stars}
+          </text>
+
+          <text
+            x="28"
+            y="145"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            FORKS
+          </text>
+
+          <text
+            x="28"
+            y="173"
+            font-family="Arial"
+            font-size="20"
+            font-weight="700"
+            fill="#c9d1d9"
+          >
+            {forks}
+          </text>
+
+          <text
+            x="175"
+            y="145"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            WATCHERS
+          </text>
+
+          <text
+            x="175"
+            y="173"
+            font-family="Arial"
+            font-size="20"
+            font-weight="700"
+            fill="#c9d1d9"
+          >
+            {watchers}
+          </text>
+
+          <text
+            x="325"
+            y="145"
+            font-family="Arial"
+            font-size="11"
+            font-weight="700"
+            fill="#8b949e"
+          >
+            USERNAME
+          </text>
+
+          <text
+            x="325"
+            y="173"
+            font-family="Arial"
+            font-size="17"
+            font-weight="700"
+            fill="#c9d1d9"
+          >
+            {escape(USERNAME)}
+          </text>
+          '''
+
+          (output / "stats.svg").write_text(
+              svg("GitHub Analytics", stats),
+              encoding="utf-8"
+          )
+
+          # ---------------------------------------------------------
+          # Top Languages Card
+          # ---------------------------------------------------------
+
+          total = sum(
+              count for _, count in top_languages
+          ) or 1
+
+          rows = []
+
+          y = 72
+
+          for language, count in top_languages:
+
+              percentage = (
+                  count / total
+              ) * 100
+
+              width = (
+                  250 * percentage / 100
+              )
+
+              rows.append(
+                  f'''
+                  <text
+                    x="28"
+                    y="{y}"
+                    font-family="Arial"
+                    font-size="14"
+                    font-weight="600"
+                    fill="#c9d1d9"
+                  >
+                    {escape(language)}
+                  </text>
+
+                  <rect
+                    x="150"
+                    y="{y - 13}"
+                    width="250"
+                    height="10"
+                    rx="5"
+                    fill="#30363d"
+                  />
+
+                  <rect
+                    x="150"
+                    y="{y - 13}"
+                    width="{width:.1f}"
+                    height="10"
+                    rx="5"
+                    fill="#00e676"
+                  />
+
+                  <text
+                    x="450"
+                    y="{y}"
+                    font-family="Arial"
+                    font-size="12"
+                    fill="#8b949e"
+                    text-anchor="end"
+                  >
+                    {percentage:.1f}%
+                  </text>
+                  '''
+              )
+
+              y += 25
+
+          language_height = max(
+              210,
+              y + 15
+          )
+
+          (output / "top-langs.svg").write_text(
+              svg(
+                  "Top Languages",
+                  "".join(rows),
+                  language_height
+              ),
+              encoding="utf-8"
+          )
+
+          # ---------------------------------------------------------
+          # Trophy Card
+          # ---------------------------------------------------------
+
+          trophy = f'''
+          <text
+            x="28"
+            y="82"
+            font-family="Arial"
+            font-size="16"
+            fill="#c9d1d9"
+          >
+            🏆 Developer Profile
+          </text>
+
+          <text
+            x="28"
+            y="120"
+            font-family="Arial"
+            font-size="27"
+            font-weight="700"
+            fill="#00e676"
+          >
+            {escape(USERNAME)}
+          </text>
+
+          <text
+            x="28"
+            y="153"
+            font-family="Arial"
+            font-size="13"
+            fill="#8b949e"
+          >
+            Building • Learning • Engineering
+          </text>
+
+          <text
+            x="28"
+            y="180"
+            font-family="Arial"
+            font-size="13"
+            fill="#8b949e"
+          >
+            Repositories: {profile.get("public_repos", 0)}
+            • Followers: {profile.get("followers", 0)}
+            • Stars: {stars}
+          </text>
+          '''
+
+          (output / "trophy.svg").write_text(
+              svg(
+                  "GitHub Achievements",
+                  trophy,
+                  210
+              ),
+              encoding="utf-8"
+          )
+
+          print("✅ Profile cards generated successfully.")
+          print("📊 stats.svg")
+          print("💻 top-langs.svg")
+          print("🏆 trophy.svg")
+
+          PY
+
+      - name: 💾 Commit generated cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/*.svg
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "📊 Update GitHub profile analytics"
+            git push
+          fi
