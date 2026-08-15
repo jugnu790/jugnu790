@@ -31,26 +31,33 @@ I enjoy working on practical engineering problems and turning complex workflows 
 ## 📊 Live GitHub Statistics
 
 <p align="center">
-  <img src="./assets/stats-card.svg" alt="GitHub statistics">
+
+<img
+src="./assets/stats-card.svg"
+alt="GitHub statistics"
+/>
+
 </p>
 
 | Metric | Value |
-|:---|---:|
-| Repositories | Automatically updated |
-| Stars | Automatically updated |
-| Forks | Automatically updated |
-| Followers | Automatically updated |
-| Following | Automatically updated |
+|---|---:|
+| Repositories | 27 |
+| Stars | 24 |
+| Forks | 0 |
+| Followers | 2 |
+| Following | 3 |
 
 ---
 
 ## 🐍 Contribution Snake
 
 <p align="center">
-  <img
-    src="./assets/github-contribution-grid-snake.svg"
-    alt="GitHub contribution snake"
-  >
+
+<img
+src="./assets/github-contribution-grid-snake.svg"
+alt="GitHub contribution snake"
+/>
+
 </p>
 
 ---
@@ -58,10 +65,12 @@ I enjoy working on practical engineering problems and turning complex workflows 
 ## 💻 Languages
 
 <p align="center">
-  <img
-    src="./assets/languages-card.svg"
-    alt="Programming languages"
-  >
+
+<img
+src="./assets/languages-card.svg"
+alt="Programming languages"
+/>
+
 </p>
 
 ---
@@ -69,19 +78,22 @@ I enjoy working on practical engineering problems and turning complex workflows 
 ## 🚀 Top Repositories
 
 <p align="center">
-  <img
-    src="./assets/repositories-card.svg"
-    alt="Top repositories"
-  >
+
+<img
+src="./assets/repositories-card.svg"
+alt="Top repositories"
+/>
+
 </p>
 
 ---
 
-### 🔄 Automated Updates
+### 🔄 Last automated update
 
-This section is generated automatically from GitHub data using GitHub Actions and Python.
+`2026-08-15 21:47 UTC`
 
 <!-- AUTO-GENERATED-END -->
+
 
 ---
 
