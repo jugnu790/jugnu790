@@ -29,8 +29,6 @@ I enjoy working on practical engineering problems and turning complex workflows 
 <!-- AUTO-GENERATED-START -->
 
 ## 📊 Live GitHub Statistics
-<<<<<<< HEAD
-=======
 
 <p align="center">
 
@@ -92,9 +90,10 @@ alt="Top repositories"
 
 ### 🔄 Last automated update
 
-`2026-08-15 21:44 UTC`
+`2026-08-15 21:50 UTC`
 
 <!-- AUTO-GENERATED-END -->
+
 
 
 ---
