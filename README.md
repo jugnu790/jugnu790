@@ -91,6 +91,38 @@ Working on enterprise applications and microservices within the **Bharat Bill Pa
 
 ---
 
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<img src="./profile/stats.svg" width="495" alt="GitHub Analytics"/>
+<img src="./profile/top-langs.svg" width="495" alt="Top Languages"/>
+
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake-dark.svg">
+<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg">
+<img src="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake">
+</picture>
+</p>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+<img src="./profile/trophy.svg" width="495" alt="GitHub Trophies"/>
+</div>
+
+> The Snake requires the `.github/workflows/snake.yml` GitHub Action to generate the SVG.
+
+
 # 🔥 AMEX Utility
 
 Worked on **AMEX Utility** and supporting backend services.
@@ -475,36 +507,7 @@ The goal is to understand how modern AI capabilities can connect with **backend 
 
 ---
 
-## 📊 GitHub Analytics
 
-<div align="center">
-
-<img src="./profile/stats.svg" width="495" alt="GitHub Analytics"/>
-<img src="./profile/top-langs.svg" width="495" alt="Top Languages"/>
-
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<p align="center">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg">
-<img src="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub Contribution Snake">
-</picture>
-</p>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-<img src="./profile/trophy.svg" width="495" alt="GitHub Trophies"/>
-</div>
-
-> The Snake requires the `.github/workflows/snake.yml` GitHub Action to generate the SVG.
 
 ---
 
