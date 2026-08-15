@@ -1,1 +1,169 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="190" viewBox="0 0 495 190"><rect width="495" height="190" rx="12" fill="#1f2330"/><text x="28" y="40" font-family="Arial" font-size="22" font-weight="700" fill="#ffffff">GitHub Analytics</text><text x="28" y="78" font-family="Arial" font-size="13" fill="#8b949e">PUBLIC REPOSITORIES</text><text x="28" y="108" font-family="Arial" font-size="26" font-weight="700" fill="#58a6ff">27</text><text x="185" y="78" font-family="Arial" font-size="13" fill="#8b949e">FOLLOWERS</text><text x="185" y="108" font-family="Arial" font-size="26" font-weight="700" fill="#58a6ff">2</text><text x="335" y="78" font-family="Arial" font-size="13" fill="#8b949e">STARS</text><text x="335" y="108" font-family="Arial" font-size="26" font-weight="700" fill="#58a6ff">24</text><text x="28" y="145" font-family="Arial" font-size="13" fill="#8b949e">FORKS</text><text x="28" y="168" font-family="Arial" font-size="19" font-weight="700" fill="#c9d1d9">0</text><text x="185" y="145" font-family="Arial" font-size="13" fill="#8b949e">USERNAME</text><text x="185" y="168" font-family="Arial" font-size="16" font-weight="700" fill="#c9d1d9">jugnu790</text></svg>
+
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="495"
+        height="220"
+        viewBox="0 0 495 220"
+    >
+
+        <defs>
+
+            <linearGradient
+                id="bg"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+            >
+
+                <stop
+                    offset="0%"
+                    stop-color="#161b22"
+                />
+
+                <stop
+                    offset="100%"
+                    stop-color="#0d1117"
+                />
+
+            </linearGradient>
+
+        </defs>
+
+
+        <rect
+            width="495"
+            height="220"
+            rx="16"
+            fill="url(#bg)"
+            stroke="#30363d"
+        />
+
+
+        <text
+            x="28"
+            y="42"
+            font-family="Arial"
+            font-size="21"
+            font-weight="700"
+            fill="#ffffff"
+        >
+            📊 GitHub Analytics
+        </text>
+
+
+        
+
+<text
+    x="28"
+    y="78"
+    font-family="Arial"
+    font-size="12"
+    fill="#8b949e"
+>
+    PUBLIC REPOSITORIES
+</text>
+
+<text
+    x="28"
+    y="108"
+    font-family="Arial"
+    font-size="26"
+    font-weight="700"
+    fill="#58a6ff"
+>
+    27
+</text>
+
+
+<text
+    x="185"
+    y="78"
+    font-family="Arial"
+    font-size="12"
+    fill="#8b949e"
+>
+    FOLLOWERS
+</text>
+
+<text
+    x="185"
+    y="108"
+    font-family="Arial"
+    font-size="26"
+    font-weight="700"
+    fill="#58a6ff"
+>
+    2
+</text>
+
+
+<text
+    x="335"
+    y="78"
+    font-family="Arial"
+    font-size="12"
+    fill="#8b949e"
+>
+    STARS
+</text>
+
+<text
+    x="335"
+    y="108"
+    font-family="Arial"
+    font-size="26"
+    font-weight="700"
+    fill="#58a6ff"
+>
+    24
+</text>
+
+
+<text
+    x="28"
+    y="148"
+    font-family="Arial"
+    font-size="12"
+    fill="#8b949e"
+>
+    FORKS
+</text>
+
+<text
+    x="28"
+    y="175"
+    font-family="Arial"
+    font-size="20"
+    font-weight="700"
+    fill="#c9d1d9"
+>
+    0
+</text>
+
+
+<text
+    x="185"
+    y="148"
+    font-family="Arial"
+    font-size="12"
+    fill="#8b949e"
+>
+    GITHUB
+</text>
+
+<text
+    x="185"
+    y="175"
+    font-family="Arial"
+    font-size="17"
+    font-weight="700"
+    fill="#c9d1d9"
+>
+    jugnu790
+</text>
+
+
+
+    </svg>
+    
