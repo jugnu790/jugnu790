@@ -29,6 +29,78 @@ I enjoy working on practical engineering problems and turning complex workflows 
 <!-- AUTO-GENERATED-START -->
 
 ## 📊 Live GitHub Statistics
+<<<<<<< HEAD
+=======
+
+<p align="center">
+
+<img
+src="./assets/stats-card.svg"
+alt="GitHub statistics"
+/>
+
+</p>
+
+| Metric | Value |
+|---|---:|
+| Repositories | 27 |
+| Stars | 24 |
+| Forks | 0 |
+| Followers | 2 |
+| Following | 3 |
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+
+<img
+src="./assets/github-contribution-grid-snake.svg"
+alt="GitHub contribution snake"
+/>
+
+</p>
+
+---
+
+## 💻 Languages
+
+<p align="center">
+
+<img
+src="./assets/languages-card.svg"
+alt="Programming languages"
+/>
+
+</p>
+
+---
+
+## 🚀 Top Repositories
+
+<p align="center">
+
+<img
+src="./assets/repositories-card.svg"
+alt="Top repositories"
+/>
+
+</p>
+
+---
+
+### 🔄 Last automated update
+
+`2026-08-15 21:44 UTC`
+
+<!-- AUTO-GENERATED-END -->
+
+
+---
+
+## 🛠️ Technologies
+>>>>>>> 15709f53141cb39e3ae777011ba3c6d959b7ff69
 
 <p align="center">
   <img src="./assets/stats-card.svg" alt="GitHub statistics">
