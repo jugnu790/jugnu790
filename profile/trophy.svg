@@ -1,165 +1,106 @@
 
     <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="495"
-        height="220"
-        viewBox="0 0 495 220"
+      xmlns="http://www.w3.org/2000/svg"
+      width="495"
+      height="210"
+      viewBox="0 0 495 210"
     >
 
-        <defs>
-
-            <linearGradient
-                id="bg"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#161b22"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#0d1117"
-                />
-
-            </linearGradient>
-
-        </defs>
-
-
-        <rect
-            width="495"
-            height="220"
-            rx="16"
-            fill="url(#bg)"
-            stroke="#30363d"
-        />
-
-
-        <text
-            x="28"
-            y="42"
-            font-family="Arial"
-            font-size="21"
-            font-weight="700"
-            fill="#ffffff"
+      <defs>
+        <linearGradient
+          id="background"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
         >
-            🏆 GitHub Achievements
-        </text>
+          <stop offset="0%" stop-color="#161b22"/>
+          <stop offset="100%" stop-color="#0d1117"/>
+        </linearGradient>
 
+        <linearGradient
+          id="accent"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="0%"
+        >
+          <stop offset="0%" stop-color="#00c853"/>
+          <stop offset="100%" stop-color="#00e676"/>
+        </linearGradient>
+      </defs>
 
-        
+      <rect
+        width="495"
+        height="210"
+        rx="16"
+        fill="url(#background)"
+        stroke="#30363d"
+      />
 
+      <rect
+        x="0"
+        y="0"
+        width="495"
+        height="5"
+        rx="3"
+        fill="url(#accent)"
+      />
+
+      <text
+        x="28"
+        y="42"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#ffffff"
+      >
+        GitHub Achievements
+      </text>
+
+      
 <text
-    x="28"
-    y="82"
-    font-family="Arial"
-    font-size="17"
-    fill="#c9d1d9"
+  x="28"
+  y="82"
+  font-family="Arial"
+  font-size="16"
+  fill="#c9d1d9"
 >
-    🏆 Developer Profile
-</text>
-
-
-<text
-    x="28"
-    y="118"
-    font-family="Arial"
-    font-size="24"
-    font-weight="700"
-    fill="#f2cc60"
->
-    jugnu790
-</text>
-
-
-<text
-    x="28"
-    y="150"
-    font-family="Arial"
-    font-size="13"
-    fill="#8b949e"
->
-    Repositories
-</text>
-
-<text
-    x="130"
-    y="150"
-    font-family="Arial"
-    font-size="13"
-    fill="#c9d1d9"
->
-    27
-</text>
-
-
-<text
-    x="200"
-    y="150"
-    font-family="Arial"
-    font-size="13"
-    fill="#8b949e"
->
-    Followers
+  🏆 Developer Profile
 </text>
 
 <text
-    x="285"
-    y="150"
-    font-family="Arial"
-    font-size="13"
-    fill="#c9d1d9"
+  x="28"
+  y="120"
+  font-family="Arial"
+  font-size="27"
+  font-weight="700"
+  fill="#00e676"
 >
-    2
-</text>
-
-
-<text
-    x="28"
-    y="180"
-    font-family="Arial"
-    font-size="13"
-    fill="#8b949e"
->
-    ⭐ Stars
+  jugnu790
 </text>
 
 <text
-    x="100"
-    y="180"
-    font-family="Arial"
-    font-size="13"
-    fill="#c9d1d9"
+  x="28"
+  y="153"
+  font-family="Arial"
+  font-size="13"
+  fill="#8b949e"
 >
-    24
-</text>
-
-
-<text
-    x="180"
-    y="180"
-    font-family="Arial"
-    font-size="13"
-    fill="#8b949e"
->
-    🍴 Forks
+  Building • Learning • Engineering
 </text>
 
 <text
-    x="260"
-    y="180"
-    font-family="Arial"
-    font-size="13"
-    fill="#c9d1d9"
+  x="28"
+  y="180"
+  font-family="Arial"
+  font-size="13"
+  fill="#8b949e"
 >
-    0
+  Repositories: 27
+  • Followers: 2
+  • Stars: 24
 </text>
-
 
 
     </svg>

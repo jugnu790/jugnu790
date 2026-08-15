@@ -1,350 +1,342 @@
 
     <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="495"
-        height="270"
-        viewBox="0 0 495 270"
+      xmlns="http://www.w3.org/2000/svg"
+      width="495"
+      height="262"
+      viewBox="0 0 495 262"
     >
 
-        <defs>
-
-            <linearGradient
-                id="bg"
-                x1="0%"
-                y1="0%"
-                x2="100%"
-                y2="100%"
-            >
-
-                <stop
-                    offset="0%"
-                    stop-color="#161b22"
-                />
-
-                <stop
-                    offset="100%"
-                    stop-color="#0d1117"
-                />
-
-            </linearGradient>
-
-        </defs>
-
-
-        <rect
-            width="495"
-            height="270"
-            rx="16"
-            fill="url(#bg)"
-            stroke="#30363d"
-        />
-
-
-        <text
-            x="28"
-            y="42"
-            font-family="Arial"
-            font-size="21"
-            font-weight="700"
-            fill="#ffffff"
+      <defs>
+        <linearGradient
+          id="background"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="100%"
         >
-            💻 Top Languages
+          <stop offset="0%" stop-color="#161b22"/>
+          <stop offset="100%" stop-color="#0d1117"/>
+        </linearGradient>
+
+        <linearGradient
+          id="accent"
+          x1="0%"
+          y1="0%"
+          x2="100%"
+          y2="0%"
+        >
+          <stop offset="0%" stop-color="#00c853"/>
+          <stop offset="100%" stop-color="#00e676"/>
+        </linearGradient>
+      </defs>
+
+      <rect
+        width="495"
+        height="262"
+        rx="16"
+        fill="url(#background)"
+        stroke="#30363d"
+      />
+
+      <rect
+        x="0"
+        y="0"
+        width="495"
+        height="5"
+        rx="3"
+        fill="url(#accent)"
+      />
+
+      <text
+        x="28"
+        y="42"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="22"
+        font-weight="700"
+        fill="#ffffff"
+      >
+        Top Languages
+      </text>
+
+      
+        <text
+          x="28"
+          y="72"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
+        >
+          JavaScript
         </text>
 
-
-        
-        <text
-            x="28"
-            y="75"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
-        >
-            JavaScript
-        </text>
-
-
         <rect
-            x="150"
-            y="62"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="59"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="62"
-            width="147.7"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="59"
+          width="147.7"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
 
-
         <text
-            x="445"
-            y="75"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="72"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            59.1%
-        </text>
-        
-        <text
-            x="28"
-            y="100"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
-        >
-            HTML
-        </text>
-
-
-        <rect
-            x="150"
-            y="87"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
-        />
-
-
-        <rect
-            x="150"
-            y="87"
-            width="45.5"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
-        />
-
-
-        <text
-            x="445"
-            y="100"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
-        >
-            18.2%
+          59.1%
         </text>
         
         <text
-            x="28"
-            y="125"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
+          x="28"
+          y="97"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
         >
-            PHP
+          HTML
         </text>
 
-
         <rect
-            x="150"
-            y="112"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="84"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="112"
-            width="11.4"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="84"
+          width="45.5"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
-
 
         <text
-            x="445"
-            y="125"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="97"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            4.5%
+          18.2%
         </text>
         
         <text
-            x="28"
-            y="150"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
+          x="28"
+          y="122"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
         >
-            Jupyter Notebook
+          Jupyter Notebook
         </text>
 
-
         <rect
-            x="150"
-            y="137"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="109"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="137"
-            width="11.4"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="109"
+          width="11.4"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
-
 
         <text
-            x="445"
-            y="150"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="122"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            4.5%
+          4.5%
         </text>
         
         <text
-            x="28"
-            y="175"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
+          x="28"
+          y="147"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
         >
-            Java
+          Python
         </text>
 
-
         <rect
-            x="150"
-            y="162"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="134"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="162"
-            width="11.4"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="134"
+          width="11.4"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
-
 
         <text
-            x="445"
-            y="175"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="147"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            4.5%
+          4.5%
         </text>
         
         <text
-            x="28"
-            y="200"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
+          x="28"
+          y="172"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
         >
-            Python
+          Java
         </text>
 
-
         <rect
-            x="150"
-            y="187"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="159"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="187"
-            width="11.4"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="159"
+          width="11.4"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
-
 
         <text
-            x="445"
-            y="200"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="172"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            4.5%
+          4.5%
         </text>
         
         <text
-            x="28"
-            y="225"
-            font-family="Arial"
-            font-size="14"
-            fill="#c9d1d9"
+          x="28"
+          y="197"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
         >
-            CSS
+          PHP
         </text>
 
-
         <rect
-            x="150"
-            y="212"
-            width="250"
-            height="10"
-            rx="5"
-            fill="#30363d"
+          x="150"
+          y="184"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
         />
 
-
         <rect
-            x="150"
-            y="212"
-            width="11.4"
-            height="10"
-            rx="5"
-            fill="#58a6ff"
+          x="150"
+          y="184"
+          width="11.4"
+          height="10"
+          rx="5"
+          fill="#00e676"
         />
-
 
         <text
-            x="445"
-            y="225"
-            font-family="Arial"
-            font-size="12"
-            fill="#8b949e"
-            text-anchor="end"
+          x="450"
+          y="197"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
         >
-            4.5%
+          4.5%
+        </text>
+        
+        <text
+          x="28"
+          y="222"
+          font-family="Arial"
+          font-size="14"
+          font-weight="600"
+          fill="#c9d1d9"
+        >
+          CSS
+        </text>
+
+        <rect
+          x="150"
+          y="209"
+          width="250"
+          height="10"
+          rx="5"
+          fill="#30363d"
+        />
+
+        <rect
+          x="150"
+          y="209"
+          width="11.4"
+          height="10"
+          rx="5"
+          fill="#00e676"
+        />
+
+        <text
+          x="450"
+          y="222"
+          font-family="Arial"
+          font-size="12"
+          fill="#8b949e"
+          text-anchor="end"
+        >
+          4.5%
         </text>
         
 
