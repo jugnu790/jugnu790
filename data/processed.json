@@ -1,0 +1,142 @@
+{
+  "profile": {
+    "login": "jugnu790",
+    "name": "Deepesh Upadhyay",
+    "bio": "💻 Software Engineer @ NPCI NBBL\r\n🚀 Java • Spring Boot • Microservices • Kafka • Docker • AWS\r\n🧠 DSA • System Design • Architecture Design • AI | Always Build",
+    "company": "NPCI Bharat BillPay Limited (NBBL)",
+    "location": "Chennai",
+    "blog": "",
+    "public_repos": 27,
+    "public_gists": 0,
+    "followers": 2,
+    "following": 3,
+    "created_at": "2021-07-20T07:12:49Z",
+    "updated_at": "2026-08-15T19:45:29Z"
+  },
+  "repositories": {
+    "total": 27,
+    "public": 27,
+    "forks": 0,
+    "stars": 24,
+    "open_issues": 0,
+    "archived": 0
+  },
+  "languages": {
+    "JavaScript": 13,
+    "HTML": 4,
+    "Python": 2,
+    "Jupyter Notebook": 1,
+    "Java": 1,
+    "PHP": 1,
+    "CSS": 1
+  },
+  "top_repositories": [
+    {
+      "name": "Leetcode",
+      "full_name": "jugnu790/Leetcode",
+      "description": "Collection of LeetCode questions to ace the coding interview! - Created using Leetcode",
+      "html_url": "https://github.com/jugnu790/Leetcode",
+      "stars": 2,
+      "forks": 0,
+      "language": "Java",
+      "updated_at": "2022-11-03T10:32:49Z"
+    },
+    {
+      "name": "jugnu790",
+      "full_name": "jugnu790/jugnu790",
+      "description": "Deepesh Upadhyay Portfolio",
+      "html_url": "https://github.com/jugnu790/jugnu790",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updated_at": "2026-08-15T21:44:23Z"
+    },
+    {
+      "name": "Crypto-Scrapping",
+      "full_name": "jugnu790/Crypto-Scrapping",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/Crypto-Scrapping",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "updated_at": "2023-12-03T18:32:52Z"
+    },
+    {
+      "name": "Assigment",
+      "full_name": "jugnu790/Assigment",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/Assigment",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated_at": "2023-12-03T18:32:50Z"
+    },
+    {
+      "name": "Phone_otp_System",
+      "full_name": "jugnu790/Phone_otp_System",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/Phone_otp_System",
+      "stars": 1,
+      "forks": 0,
+      "language": null,
+      "updated_at": "2023-12-03T18:32:49Z"
+    },
+    {
+      "name": "BlockChain_with_Ecommerce",
+      "full_name": "jugnu790/BlockChain_with_Ecommerce",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/BlockChain_with_Ecommerce",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated_at": "2023-12-03T18:32:48Z"
+    },
+    {
+      "name": "TurfJs-Assigment",
+      "full_name": "jugnu790/TurfJs-Assigment",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/TurfJs-Assigment",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated_at": "2023-12-03T18:32:47Z"
+    },
+    {
+      "name": "CloudVandana-Assigment",
+      "full_name": "jugnu790/CloudVandana-Assigment",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/CloudVandana-Assigment",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated_at": "2023-12-03T18:32:36Z"
+    },
+    {
+      "name": "WebRate",
+      "full_name": "jugnu790/WebRate",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/WebRate",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "updated_at": "2023-12-03T18:32:35Z"
+    },
+    {
+      "name": "Hire",
+      "full_name": "jugnu790/Hire",
+      "description": null,
+      "html_url": "https://github.com/jugnu790/Hire",
+      "stars": 1,
+      "forks": 0,
+      "language": "JavaScript",
+      "updated_at": "2023-12-03T18:32:31Z"
+    }
+  ],
+  "events": {
+    "total": 20,
+    "types": {
+      "PushEvent": 19,
+      "CreateEvent": 1
+    }
+  }
+}
