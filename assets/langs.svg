@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320" role="img" aria-label="LANGUAGES">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#06182A"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0F766E"/><stop offset="60%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#F59E0B"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="500" height="320" rx="14" fill="url(#bg)" stroke="#0E7490" stroke-opacity="0.5"/>
+<text x="24" y="34" fill="#22D3EE" font-size="13" letter-spacing="4" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">LANGUAGES</text>
+<text x="476" y="34" fill="#475569" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">sample data - run the cards workflow</text>
+<rect x="24" y="46" width="452" height="1" fill="#0E7490" opacity="0.4"/>
+
+<g>
+  <rect x="24.0" y="62" width="202.8" height="12" fill="#b07219"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="0.00s" repeatCount="indefinite"/></rect>
+  <rect x="226.8" y="62" width="143.6" height="12" fill="#f1e05a"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="0.25s" repeatCount="indefinite"/></rect>
+  <rect x="370.4" y="62" width="38.0" height="12" fill="#563d7c"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="0.50s" repeatCount="indefinite"/></rect>
+  <rect x="408.4" y="62" width="29.6" height="12" fill="#3572A5"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="0.75s" repeatCount="indefinite"/></rect>
+  <rect x="438.0" y="62" width="25.3" height="12" fill="#e34c26"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="1.00s" repeatCount="indefinite"/></rect>
+  <rect x="463.3" y="62" width="12.7" height="12" fill="#89e051"><animate attributeName="opacity" values="0.55;1;0.55" dur="4s" begin="1.25s" repeatCount="indefinite"/></rect>
+</g>
+<g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace" font-size="12">
+  <circle cx="30" cy="104" r="4" fill="#b07219"/>
+  <text x="44" y="108" fill="#CBD5E1">Java</text>
+  <rect x="190" y="97" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="97" width="94.2" height="12" rx="6" fill="#b07219" opacity="0.9"><animate attributeName="width" values="0;0;94.2;94.2" keyTimes="0;0.0312;0.1562;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc0"><rect x="190" y="97" width="94.2" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc0)"><rect y="97" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;284.2" dur="8s" begin="1.25s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="108" fill="#475569" text-anchor="end" font-size="11">44.9%</text>
+  <circle cx="30" cy="130" r="4" fill="#f1e05a"/>
+  <text x="44" y="134" fill="#CBD5E1">JavaScript</text>
+  <rect x="190" y="123" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="123" width="66.7" height="12" rx="6" fill="#f1e05a" opacity="0.9"><animate attributeName="width" values="0;0;66.7;66.7" keyTimes="0;0.0512;0.1762;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc1"><rect x="190" y="123" width="66.7" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc1)"><rect y="123" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;256.7" dur="8s" begin="1.41s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="134" fill="#475569" text-anchor="end" font-size="11">31.8%</text>
+  <circle cx="30" cy="156" r="4" fill="#563d7c"/>
+  <text x="44" y="160" fill="#CBD5E1">CSS</text>
+  <rect x="190" y="149" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="149" width="17.7" height="12" rx="6" fill="#563d7c" opacity="0.9"><animate attributeName="width" values="0;0;17.7;17.7" keyTimes="0;0.0712;0.1962;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc2"><rect x="190" y="149" width="17.7" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc2)"><rect y="149" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;207.7" dur="8s" begin="1.57s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="160" fill="#475569" text-anchor="end" font-size="11">8.4%</text>
+  <circle cx="30" cy="182" r="4" fill="#3572A5"/>
+  <text x="44" y="186" fill="#CBD5E1">Python</text>
+  <rect x="190" y="175" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="175" width="13.7" height="12" rx="6" fill="#3572A5" opacity="0.9"><animate attributeName="width" values="0;0;13.7;13.7" keyTimes="0;0.0912;0.2162;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc3"><rect x="190" y="175" width="13.7" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc3)"><rect y="175" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;203.7" dur="8s" begin="1.73s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="186" fill="#475569" text-anchor="end" font-size="11">6.5%</text>
+  <circle cx="30" cy="208" r="4" fill="#e34c26"/>
+  <text x="44" y="212" fill="#CBD5E1">HTML</text>
+  <rect x="190" y="201" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="201" width="11.8" height="12" rx="6" fill="#e34c26" opacity="0.9"><animate attributeName="width" values="0;0;11.8;11.8" keyTimes="0;0.1113;0.2363;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc4"><rect x="190" y="201" width="11.8" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc4)"><rect y="201" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;201.8" dur="8s" begin="1.89s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="212" fill="#475569" text-anchor="end" font-size="11">5.6%</text>
+  <circle cx="30" cy="234" r="4" fill="#89e051"/>
+  <text x="44" y="238" fill="#CBD5E1">Shell</text>
+  <rect x="190" y="227" width="210" height="12" rx="6" fill="#0B1220" stroke="#123847"/>
+  <rect x="190" y="227" width="5.9" height="12" rx="6" fill="#89e051" opacity="0.9"><animate attributeName="width" values="0;0;5.9;5.9" keyTimes="0;0.1313;0.2562;1" dur="8s" repeatCount="indefinite"/></rect>
+  <clipPath id="lc5"><rect x="190" y="227" width="5.9" height="12" rx="6"/></clipPath>
+  <g clip-path="url(#lc5)"><rect y="227" width="50" height="12" fill="url(#shine)"><animate attributeName="x" values="130;195.9" dur="8s" begin="2.05s" repeatCount="indefinite"/></rect></g>
+  <text x="476" y="238" fill="#475569" text-anchor="end" font-size="11">2.8%</text>
+</g>
+<rect x="24" y="302" width="452" height="3" rx="1.5" fill="url(#accent)" opacity="0.7"/>
+</svg>

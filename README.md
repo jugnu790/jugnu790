@@ -129,24 +129,22 @@ Projects I've contributed to include **AMEX Utility** and **Short.io microservic
 
 ## GitHub activity
 
+<sub>These four cards are generated from the GitHub API by a workflow in this repo — no third-party rendering service, so they can't rate-limit or go grey.</sub>
+
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=jugnu790&show_icons=true&hide_border=true&bg_color=020617&title_color=22D3EE&icon_color=F59E0B&text_color=CBD5E1&ring_color=22D3EE" width="49%" alt="GitHub stats"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=jugnu790&layout=compact&hide_border=true&bg_color=020617&title_color=22D3EE&text_color=CBD5E1" width="41%" alt="Top languages"/>
+<img src="./assets/stats.svg" width="48%" alt="Contribution stats"/>
+<img src="./assets/langs.svg" width="48%" alt="Top languages"/>
 
-<br>
+<br><br>
 
-<img src="https://streak-stats.demolab.com?user=jugnu790&hide_border=true&background=020617&ring=22D3EE&fire=F59E0B&currStreakLabel=67E8F9&sideLabels=CBD5E1&dates=475569&stroke=0F766E" width="70%" alt="Contribution streak"/>
+<img src="./assets/highlights.svg" width="100%" alt="Profile highlights"/>
 
-<br>
+<br><br>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=jugnu790&bg_color=020617&color=22D3EE&line=0F766E&point=F59E0B&area=true&area_color=0891B2&hide_border=true" width="100%" alt="Contribution activity graph"/>
+<img src="./assets/activity.svg" width="100%" alt="Contribution activity heatmap"/>
 
-<br>
-
-<img src="https://github-profile-trophy.vercel.app/?username=jugnu790&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" width="100%" alt="GitHub trophies"/>
-
-<br>
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake-dark.svg"/>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" width="500" height="320" role="img" aria-label="CONTRIBUTION STATS">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#06182A"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0F766E"/><stop offset="60%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#F59E0B"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="500" height="320" rx="14" fill="url(#bg)" stroke="#0E7490" stroke-opacity="0.5"/>
+<text x="24" y="34" fill="#22D3EE" font-size="13" letter-spacing="4" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">CONTRIBUTION STATS</text>
+<text x="476" y="34" fill="#475569" font-size="11" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">sample data - run the cards workflow</text>
+<rect x="24" y="46" width="452" height="1" fill="#0E7490" opacity="0.4"/>
+
+<circle cx="118" cy="178" r="62" fill="none" stroke="#0B1220" stroke-width="12"/>
+<circle cx="118" cy="178" r="62" fill="none" stroke="url(#accent)" stroke-width="12" stroke-linecap="round" transform="rotate(-90 118 178)" stroke-dasharray="389.6" stroke-dashoffset="70.1"><animate attributeName="stroke-dashoffset" values="389.6;70.1;70.1" keyTimes="0;0.45;1" dur="8s" repeatCount="indefinite"/></circle>
+<circle cx="118" cy="178" r="62" fill="none" stroke="#22D3EE" stroke-opacity="0.5"><animate attributeName="r" values="62;84" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0" dur="3.4s" repeatCount="indefinite"/></circle>
+<text x="118" y="182" text-anchor="middle" fill="#F8FAFC" font-size="30" font-weight="700" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">1074</text>
+<text x="118" y="264" text-anchor="middle" fill="#475569" font-size="10" letter-spacing="1.5" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">CONTRIBUTIONS</text>
+<text x="118" y="286" text-anchor="middle" fill="#4ADE80" font-size="11" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">155 active days</text>
+<g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace" font-size="12">
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0250;0.0875;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="80" r="3" fill="#F59E0B"/><text x="238" y="84" fill="#CBD5E1">Commits</text><text x="476" y="84" fill="#F59E0B" text-anchor="end" font-weight="600">812</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0425;0.1050;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="108" r="3" fill="#22D3EE"/><text x="238" y="112" fill="#CBD5E1">Pull requests</text><text x="476" y="112" fill="#22D3EE" text-anchor="end" font-weight="600">64</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0600;0.1225;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="136" r="3" fill="#4ADE80"/><text x="238" y="140" fill="#CBD5E1">Code reviews</text><text x="476" y="140" fill="#4ADE80" text-anchor="end" font-weight="600">37</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0775;0.1400;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="164" r="3" fill="#A5B4FC"/><text x="238" y="168" fill="#CBD5E1">Issues</text><text x="476" y="168" fill="#A5B4FC" text-anchor="end" font-weight="600">23</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.0950;0.1575;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="192" r="3" fill="#5EEAD4"/><text x="238" y="196" fill="#CBD5E1">Private contributions</text><text x="476" y="196" fill="#5EEAD4" text-anchor="end" font-weight="600">138</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1125;0.1750;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="220" r="3" fill="#F59E0B"/><text x="238" y="224" fill="#CBD5E1">Stars earned</text><text x="476" y="224" fill="#F59E0B" text-anchor="end" font-weight="600">10</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1300;0.1925;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="248" r="3" fill="#22D3EE"/><text x="238" y="252" fill="#CBD5E1">Followers</text><text x="476" y="252" fill="#22D3EE" text-anchor="end" font-weight="600">41</text></g>
+  <g opacity="1"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.1475;0.2100;1" dur="8s" repeatCount="indefinite"/><circle cx="224" cy="276" r="3" fill="#CBD5E1"/><text x="238" y="280" fill="#CBD5E1">Public repositories</text><text x="476" y="280" fill="#CBD5E1" text-anchor="end" font-weight="600">38</text></g>
+</g>
+<rect x="24" y="302" width="452" height="3" rx="1.5" fill="url(#accent)" opacity="0.7"/>
+</svg>
