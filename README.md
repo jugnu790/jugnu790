@@ -198,3 +198,71 @@ The first computer "bug" was a literal one — a moth pulled out of the Harvard 
 <img src="./assets/footer.svg" width="100%" alt=""/>
 
 </div>
+
+<!-- AUTO-GENERATED-START -->
+
+## 📊 Live GitHub Statistics
+
+<p align="center">
+
+<img
+src="./assets/stats-card.svg"
+alt="GitHub statistics"
+/>
+
+</p>
+
+| Metric | Value |
+|---|---:|
+| Repositories | 27 |
+| Stars | 24 |
+| Forks | 0 |
+| Followers | 2 |
+| Following | 3 |
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+
+<img
+src="./assets/github-contribution-grid-snake.svg"
+alt="GitHub contribution snake"
+/>
+
+</p>
+
+---
+
+## 💻 Languages
+
+<p align="center">
+
+<img
+src="./assets/languages-card.svg"
+alt="Programming languages"
+/>
+
+</p>
+
+---
+
+## 🚀 Top Repositories
+
+<p align="center">
+
+<img
+src="./assets/repositories-card.svg"
+alt="Top repositories"
+/>
+
+</p>
+
+---
+
+### 🔄 Last automated update
+
+`2026-08-15 21:52 UTC`
+
+<!-- AUTO-GENERATED-END -->
