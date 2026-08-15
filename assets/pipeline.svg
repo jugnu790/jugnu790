@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 190" width="1000" height="190" role="img" aria-label="Animated CI/CD pipeline: commit, build, test, package, docker, deploy, monitor">
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#05161F"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="70%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="pg" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="190" rx="14" fill="url(#pbg)" stroke="#0E7490" stroke-opacity="0.5"/>
+
+  <text x="24" y="34" fill="#64748B" font-size="12" letter-spacing="4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">DELIVERY PIPELINE &#183; JENKINS</text>
+
+  <line x1="79" y1="110" x2="920" y2="110" stroke="#0E7490" stroke-opacity="0.45" stroke-width="2"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace" font-size="12" text-anchor="middle" fill="#CBD5E1">
+    <g>
+      <rect x="20" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.07;0.20;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="79" y="114">COMMIT</text>
+    </g>
+    <g>
+      <rect x="160" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.14;0.21;0.34;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="219" y="114">BUILD</text>
+    </g>
+    <g>
+      <rect x="300" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.28;0.35;0.48;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="359" y="114">TEST</text>
+    </g>
+    <g>
+      <rect x="441" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.42;0.49;0.62;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="500" y="114">PACKAGE</text>
+    </g>
+    <g>
+      <rect x="581" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.56;0.63;0.76;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="640" y="114">DOCKER</text>
+    </g>
+    <g>
+      <rect x="721" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#22D3EE;#155E75;#155E75" keyTimes="0;0.70;0.77;0.90;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="780" y="114">DEPLOY</text>
+    </g>
+    <g>
+      <rect x="861" y="84" width="118" height="52" rx="10" fill="#0B1220" stroke="#155E75">
+        <animate attributeName="stroke" values="#155E75;#155E75;#4ADE80;#155E75" keyTimes="0;0.84;0.93;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="920" y="114">MONITOR</text>
+    </g>
+  </g>
+
+  <!-- build token travelling the pipeline -->
+  <circle r="7" cx="79" cy="110" fill="#F59E0B" filter="url(#pg)">
+    <animate attributeName="cx" values="79;219;359;500;640;780;920;920" keyTimes="0;0.14;0.28;0.42;0.56;0.70;0.86;1" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#F59E0B;#F59E0B;#4ADE80;#4ADE80" keyTimes="0;0.84;0.90;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- progress rail -->
+  <rect x="20" y="160" width="959" height="6" rx="3" fill="#0B1220"/>
+  <rect x="20" y="160" width="959" height="6" rx="3" fill="url(#fill)">
+    <animate attributeName="width" values="0;959;959;0" keyTimes="0;0.86;0.97;1" dur="7s" repeatCount="indefinite"/>
+  </rect>
+</svg>

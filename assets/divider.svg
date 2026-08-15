@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 12" width="1000" height="12" role="img" aria-label="divider">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="50%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#F59E0B" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect y="5" width="1000" height="2" fill="url(#base)"/>
+  <rect y="4" width="220" height="4" rx="2" fill="url(#pulse)">
+    <animate attributeName="x" values="-240;1000" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+  <g fill="#22D3EE">
+    <circle cx="500" cy="6" r="3">
+      <animate attributeName="r" values="2;4;2" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

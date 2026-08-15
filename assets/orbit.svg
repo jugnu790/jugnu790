@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Orbiting technology stack">
+<defs>
+  <radialGradient id="core" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#0891B2" stop-opacity="0.55"/>
+    <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+<rect width="600" height="600" rx="18" fill="#020617"/>
+<circle cx="300" cy="300" r="230" fill="url(#core)"><animate attributeName="opacity" values="0.6;1;0.6" dur="6s" repeatCount="indefinite"/></circle>
+<circle cx="300" cy="300" r="108" fill="none" stroke="#F59E0B" stroke-opacity="0.28" stroke-dasharray="3 9"/>
+<circle cx="300" cy="300" r="176" fill="none" stroke="#22D3EE" stroke-opacity="0.28" stroke-dasharray="3 9"/>
+<circle cx="300" cy="300" r="248" fill="none" stroke="#5EEAD4" stroke-opacity="0.28" stroke-dasharray="3 9"/>
+<circle cx="300" cy="300" r="54" fill="#062B33" stroke="#22D3EE" stroke-width="2"/>
+<circle cx="300" cy="300" r="54" fill="none" stroke="#22D3EE"><animate attributeName="r" values="54;88" dur="3.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.7;0" dur="3.2s" repeatCount="indefinite"/></circle>
+<text x="300" y="296" text-anchor="middle" fill="#67E8F9" font-size="15" letter-spacing="2" font-family="ui-monospace, Menlo, monospace">STACK</text>
+<text x="300" y="316" text-anchor="middle" fill="#475569" font-size="11" font-family="ui-monospace, Menlo, monospace">jugnu790</text>
+<g><animateTransform attributeName="transform" type="rotate" from="0 300 300" to="360 300 300" dur="26s" repeatCount="indefinite"/>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 300.0 192.0" to="-360 300.0 192.0" dur="26s" repeatCount="indefinite"/><rect x="278.8" y="179.0" width="42.4" height="26" rx="13" fill="#08202B" stroke="#F59E0B" stroke-opacity="0.85"/><text x="300.0" y="197.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Java</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 393.5 354.0" to="-360 393.5 354.0" dur="26s" repeatCount="indefinite"/><rect x="345.7" y="341.0" width="95.6" height="26" rx="13" fill="#08202B" stroke="#F59E0B" stroke-opacity="0.85"/><text x="393.5" y="359.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Spring Boot</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 206.5 354.0" to="-360 206.5 354.0" dur="26s" repeatCount="indefinite"/><rect x="185.3" y="341.0" width="42.4" height="26" rx="13" fill="#08202B" stroke="#F59E0B" stroke-opacity="0.85"/><text x="206.5" y="359.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">REST</text></g>
+</g>
+<g><animateTransform attributeName="transform" type="rotate" from="0 300 300" to="-360 300 300" dur="38s" repeatCount="indefinite"/>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 300.0 124.0" to="360 300.0 124.0" dur="38s" repeatCount="indefinite"/><rect x="275.0" y="111.0" width="50.0" height="26" rx="13" fill="#08202B" stroke="#22D3EE" stroke-opacity="0.85"/><text x="300.0" y="129.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Kafka</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 476.0 300.0" to="360 476.0 300.0" dur="38s" repeatCount="indefinite"/><rect x="451.0" y="287.0" width="50.0" height="26" rx="13" fill="#08202B" stroke="#22D3EE" stroke-opacity="0.85"/><text x="476.0" y="305.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Redis</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 300.0 476.0" to="360 300.0 476.0" dur="38s" repeatCount="indefinite"/><rect x="256.0" y="463.0" width="88.0" height="26" rx="13" fill="#08202B" stroke="#22D3EE" stroke-opacity="0.85"/><text x="300.0" y="481.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">PostgreSQL</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 124.0 300.0" to="360 124.0 300.0" dur="38s" repeatCount="indefinite"/><rect x="83.8" y="287.0" width="80.4" height="26" rx="13" fill="#08202B" stroke="#22D3EE" stroke-opacity="0.85"/><text x="124.0" y="305.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Cassandra</text></g>
+</g>
+<g><animateTransform attributeName="transform" type="rotate" from="0 300 300" to="360 300 300" dur="52s" repeatCount="indefinite"/>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 300.0 52.0" to="-360 300.0 52.0" dur="52s" repeatCount="indefinite"/><rect x="271.2" y="39.0" width="57.6" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="300.0" y="57.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Docker</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 514.8 176.0" to="-360 514.8 176.0" dur="52s" repeatCount="indefinite"/><rect x="482.2" y="163.0" width="65.2" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="514.8" y="181.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Jenkins</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 514.8 424.0" to="-360 514.8 424.0" dur="52s" repeatCount="indefinite"/><rect x="497.4" y="411.0" width="34.8" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="514.8" y="429.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">AWS</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 300.0 548.0" to="-360 300.0 548.0" dur="52s" repeatCount="indefinite"/><rect x="275.0" y="535.0" width="50.0" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="300.0" y="553.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Linux</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 85.2 424.0" to="-360 85.2 424.0" dur="52s" repeatCount="indefinite"/><rect x="60.2" y="411.0" width="50.0" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="85.2" y="429.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">React</text></g>
+  <g><animateTransform attributeName="transform" type="rotate" from="0 85.2 176.0" to="-360 85.2 176.0" dur="52s" repeatCount="indefinite"/><rect x="56.4" y="163.0" width="57.6" height="26" rx="13" fill="#08202B" stroke="#5EEAD4" stroke-opacity="0.85"/><text x="85.2" y="181.0" text-anchor="middle" fill="#E2E8F0" font-size="12" font-family="ui-monospace, Menlo, monospace">Kibana</text></g>
+</g>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Deepesh Upadhyay - Software Engineer">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="55%" stop-color="#07182B"/>
+      <stop offset="100%" stop-color="#04121F"/>
+    </linearGradient>
+
+    <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F766E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22D3EE" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F766E" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="45%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0E7490" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="wipe">
+      <rect x="60" y="60" width="620" height="120">
+        <animate attributeName="width" values="0;620;620" keyTimes="0;0.35;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="frame"><rect x="0" y="0" width="1000" height="280" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="280" fill="url(#sky)"/>
+    <rect width="1000" height="280" fill="url(#grid)"/>
+
+    <!-- ambient light that drifts -->
+    <ellipse cx="250" cy="120" rx="320" ry="180" fill="url(#glow)">
+      <animate attributeName="cx" values="250;760;250" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.55;1;0.55" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- settlement rails: packets crossing the header -->
+    <g>
+      <path id="railA" d="M-40 62 H1040" stroke="#0E7490" stroke-opacity="0.35" stroke-width="1"/>
+      <path id="railB" d="M-40 214 H1040" stroke="#0E7490" stroke-opacity="0.35" stroke-width="1"/>
+      <path id="railC" d="M-40 248 H1040" stroke="#0E7490" stroke-opacity="0.22" stroke-width="1"/>
+
+      <rect x="-40" y="59" width="120" height="6" rx="3" fill="url(#wire)">
+        <animate attributeName="x" values="-160;1040" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-40" y="211" width="90" height="6" rx="3" fill="url(#wire)">
+        <animate attributeName="x" values="-160;1040" dur="4.6s" begin="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="-40" y="245" width="150" height="6" rx="3" fill="url(#wire)">
+        <animate attributeName="x" values="-160;1040" dur="6.1s" begin="1.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- floating particles -->
+    <g fill="#22D3EE">
+      <circle cx="120" cy="200" r="2" opacity="0.7"><animate attributeName="cy" values="200;90;200" dur="11s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="11s" repeatCount="indefinite"/></circle>
+      <circle cx="330" cy="230" r="1.6" opacity="0.6"><animate attributeName="cy" values="230;70;230" dur="14s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="14s" repeatCount="indefinite"/></circle>
+      <circle cx="700" cy="210" r="2.2" opacity="0.5"><animate attributeName="cy" values="210;60;210" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="880" cy="240" r="1.8" opacity="0.6"><animate attributeName="cy" values="240;80;240" dur="13s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="13s" repeatCount="indefinite"/></circle>
+      <circle cx="520" cy="250" r="1.4" opacity="0.5"><animate attributeName="cy" values="250;100;250" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="12s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- eyebrow -->
+    <g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">
+      <text x="62" y="46" fill="#F59E0B" font-size="13" letter-spacing="4">
+        NPCI BHARAT BILLPAY LIMITED
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="4s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- name, revealed by a wipe -->
+      <g clip-path="url(#wipe)">
+        <text x="60" y="128" fill="#67E8F9" font-size="62" font-weight="700" letter-spacing="-1" filter="url(#soft)" opacity="0.35">Deepesh Upadhyay</text>
+        <text x="60" y="128" fill="#F8FAFC" font-size="62" font-weight="700" letter-spacing="-1">Deepesh Upadhyay</text>
+      </g>
+
+      <!-- typing caret follows the wipe -->
+      <rect x="680" y="82" width="4" height="58" fill="#F59E0B">
+        <animate attributeName="x" values="62;680;680" keyTimes="0;0.35;1" dur="7s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;1;0;1;0;1" keyTimes="0;0.36;0.5;0.64;0.8;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+
+      <text x="62" y="166" fill="#94A3B8" font-size="17" letter-spacing="1.5">
+        Software Engineer &#183; Java &#183; Spring Boot &#183; Microservices &#183; Kafka &#183; DevOps
+        <animate attributeName="opacity" values="0;0;0.95" keyTimes="0;0.38;0.5" dur="7s" repeatCount="indefinite"/>
+      </text>
+    </g>
+
+    <!-- live status chip -->
+    <g transform="translate(806,36)">
+      <rect width="132" height="30" rx="15" fill="#04222B" stroke="#0F766E"/>
+      <circle cx="20" cy="15" r="5" fill="#4ADE80">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="20" cy="15" r="5" fill="none" stroke="#4ADE80">
+        <animate attributeName="r" values="5;13" dur="1.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.7;0" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="36" y="20" fill="#86EFAC" font-size="12" letter-spacing="2" font-family="ui-monospace, monospace">SHIPPING</text>
+    </g>
+
+    <rect x="0" y="276" width="1000" height="4" fill="url(#rule)"/>
+  </g>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 494" width="1000" height="494" role="img" aria-label="Animated skill depth chart">
+<defs>
+  <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020617"/><stop offset="100%" stop-color="#06182A"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.5"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<rect width="1000" height="494" rx="14" fill="url(#sbg)" stroke="#0E7490" stroke-opacity="0.5"/>
+<text x="28" y="42" fill="#67E8F9" font-size="15" letter-spacing="4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">WHERE THE HOURS GO</text>
+<text x="972" y="42" fill="#475569" font-size="11" text-anchor="end" font-family="ui-monospace, Menlo, monospace">depth, not a certificate count</text>
+<g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace" font-size="13">
+  <text x="28" y="83" fill="#CBD5E1">Java</text>
+  <rect x="330" y="69" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="69" width="552.0" height="14" rx="7" fill="#F59E0B" opacity="0.9"><animate attributeName="width" values="0;0;552.0;552.0" keyTimes="0;0.0167;0.1389;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb0"><rect x="330" y="69" width="552.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb0)"><rect y="69" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;882.0" dur="9.0s" begin="1.25s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="83" fill="#F59E0B" font-size="12">92</text>
+  <text x="28" y="123" fill="#CBD5E1">Spring Boot / Spring Cloud</text>
+  <rect x="330" y="109" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="109" width="540.0" height="14" rx="7" fill="#4ADE80" opacity="0.9"><animate attributeName="width" values="0;0;540.0;540.0" keyTimes="0;0.03;0.1522;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb1"><rect x="330" y="109" width="540.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb1)"><rect y="109" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;870.0" dur="9.0s" begin="1.37s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="123" fill="#4ADE80" font-size="12">90</text>
+  <text x="28" y="163" fill="#CBD5E1">REST APIs &amp; Microservices</text>
+  <rect x="330" y="149" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="149" width="528.0" height="14" rx="7" fill="#22D3EE" opacity="0.9"><animate attributeName="width" values="0;0;528.0;528.0" keyTimes="0;0.0433;0.1656;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb2"><rect x="330" y="149" width="528.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb2)"><rect y="149" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;858.0" dur="9.0s" begin="1.4900000000000002s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="163" fill="#22D3EE" font-size="12">88</text>
+  <text x="28" y="203" fill="#CBD5E1">Apache Kafka / Redis</text>
+  <rect x="330" y="189" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="189" width="468.0" height="14" rx="7" fill="#22D3EE" opacity="0.9"><animate attributeName="width" values="0;0;468.0;468.0" keyTimes="0;0.0567;0.1789;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb3"><rect x="330" y="189" width="468.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb3)"><rect y="189" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;798.0" dur="9.0s" begin="1.61s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="203" fill="#22D3EE" font-size="12">78</text>
+  <text x="28" y="243" fill="#CBD5E1">PostgreSQL / MySQL / Cassandra</text>
+  <rect x="330" y="229" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="229" width="480.0" height="14" rx="7" fill="#0EA5E9" opacity="0.9"><animate attributeName="width" values="0;0;480.0;480.0" keyTimes="0;0.07;0.1922;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb4"><rect x="330" y="229" width="480.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb4)"><rect y="229" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;810.0" dur="9.0s" begin="1.73s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="243" fill="#0EA5E9" font-size="12">80</text>
+  <text x="28" y="283" fill="#CBD5E1">Docker / Jenkins / CI-CD</text>
+  <rect x="330" y="269" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="269" width="456.0" height="14" rx="7" fill="#38BDF8" opacity="0.9"><animate attributeName="width" values="0;0;456.0;456.0" keyTimes="0;0.0833;0.2056;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb5"><rect x="330" y="269" width="456.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb5)"><rect y="269" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;786.0" dur="9.0s" begin="1.85s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="283" fill="#38BDF8" font-size="12">76</text>
+  <text x="28" y="323" fill="#CBD5E1">React / Redux / JavaScript</text>
+  <rect x="330" y="309" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="309" width="444.0" height="14" rx="7" fill="#67E8F9" opacity="0.9"><animate attributeName="width" values="0;0;444.0;444.0" keyTimes="0;0.0967;0.2189;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb6"><rect x="330" y="309" width="444.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb6)"><rect y="309" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;774.0" dur="9.0s" begin="1.9700000000000002s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="323" fill="#67E8F9" font-size="12">74</text>
+  <text x="28" y="363" fill="#CBD5E1">AWS / Linux / Nginx</text>
+  <rect x="330" y="349" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="349" width="408.0" height="14" rx="7" fill="#5EEAD4" opacity="0.9"><animate attributeName="width" values="0;0;408.0;408.0" keyTimes="0;0.11;0.2322;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb7"><rect x="330" y="349" width="408.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb7)"><rect y="349" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;738.0" dur="9.0s" begin="2.09s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="363" fill="#5EEAD4" font-size="12">68</text>
+  <text x="28" y="403" fill="#CBD5E1">DSA &amp; System Design</text>
+  <rect x="330" y="389" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="389" width="420.0" height="14" rx="7" fill="#A5B4FC" opacity="0.9"><animate attributeName="width" values="0;0;420.0;420.0" keyTimes="0;0.1233;0.2456;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb8"><rect x="330" y="389" width="420.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb8)"><rect y="389" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;750.0" dur="9.0s" begin="2.21s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="403" fill="#A5B4FC" font-size="12">70</text>
+  <text x="28" y="443" fill="#CBD5E1">AI / GenAI  (learning)</text>
+  <rect x="330" y="429" width="600" height="14" rx="7" fill="#0B1220" stroke="#123847"/>
+  <rect x="330" y="429" width="270.0" height="14" rx="7" fill="#F472B6" opacity="0.9"><animate attributeName="width" values="0;0;270.0;270.0" keyTimes="0;0.1367;0.2589;1" dur="9.0s" repeatCount="indefinite"/></rect>
+  <clipPath id="cb9"><rect x="330" y="429" width="270.0" height="14" rx="7"/></clipPath>
+  <g clip-path="url(#cb9)"><rect y="429" width="70" height="14" fill="url(#shine)"><animate attributeName="x" values="250;600.0" dur="9.0s" begin="2.33s" repeatCount="indefinite"/></rect></g>
+  <text x="944" y="443" fill="#F472B6" font-size="12">45</text>
+</g></svg>

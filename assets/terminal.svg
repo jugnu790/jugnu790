@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 486" width="900" height="486" role="img" aria-label="Animated terminal introducing Deepesh Upadhyay">
+
+  <defs>
+    <linearGradient id="term" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04101C"/>
+      <stop offset="100%" stop-color="#071B27"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <clipPath id="scan"><rect x="2" y="2" width="896" height="482" rx="14"/></clipPath>
+  </defs>
+
+<rect x="1" y="1" width="898" height="484" rx="15" fill="url(#term)" stroke="#0E7490"/>
+<rect x="1" y="1" width="898" height="44" rx="15" fill="#061622"/>
+<rect x="1" y="30" width="898" height="15" fill="#061622"/>
+<line x1="1" y1="45" x2="899" y2="45" stroke="#0E7490" stroke-opacity="0.6"/>
+<circle cx="28" cy="23" r="6" fill="#EF4444"><animate attributeName="opacity" values="0.55;1;0.55" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="50" cy="23" r="6" fill="#F59E0B"><animate attributeName="opacity" values="0.55;1;0.55" dur="3.0s" repeatCount="indefinite"/></circle>
+<circle cx="72" cy="23" r="6" fill="#4ADE80"><animate attributeName="opacity" values="0.55;1;0.55" dur="3.5999999999999996s" repeatCount="indefinite"/></circle>
+<text x="450" y="28" fill="#64748B" font-size="13" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace">deepesh@engineering: ~/nbbl</text>
+<g clip-path="url(#scan)"><rect x="0" y="0" width="900" height="60" fill="#22D3EE" opacity="0.04"><animate attributeName="y" values="-60;486" dur="6s" repeatCount="indefinite"/></rect></g>
+<g font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace" font-size="14">
+  <clipPath id="c0"><rect x="34" y="78" width="73.2" height="24"><animate attributeName="width" values="0;0;73.2;73.2;0" keyTimes="0;0.03596;0.0764;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c0)"><text x="34" y="96" fill="#67E8F9" font-weight="600">$ whoami</text></g>
+  <clipPath id="c1"><rect x="34" y="104" width="140.4" height="24"><animate attributeName="width" values="0;0;140.4;140.4;0" keyTimes="0;0.09663;0.13708;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c1)"><text x="34" y="122" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="122" fill="#CBD5E1" font-weight="400">Deepesh Upadhyay</text></g>
+  <clipPath id="c2"><rect x="34" y="130" width="140.4" height="24"><animate attributeName="width" values="0;0;140.4;140.4;0" keyTimes="0;0.1573;0.19775;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c2)"><text x="34" y="148" fill="#67E8F9" font-weight="600">$ role --current</text></g>
+  <clipPath id="c3"><rect x="34" y="156" width="585.6" height="24"><animate attributeName="width" values="0;0;585.6;585.6;0" keyTimes="0;0.21798;0.25843;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c3)"><text x="34" y="174" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="174" fill="#CBD5E1" font-weight="400">Software Engineer @ NPCI Bharat BillPay Limited  (Oct 2024 - present)</text></g>
+  <clipPath id="c4"><rect x="34" y="182" width="148.8" height="24"><animate attributeName="width" values="0;0;148.8;148.8;0" keyTimes="0;0.27865;0.3191;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c4)"><text x="34" y="200" fill="#67E8F9" font-weight="600">$ stack --backend</text></g>
+  <clipPath id="c5"><rect x="34" y="208" width="510.0" height="24"><animate attributeName="width" values="0;0;510.0;510.0;0" keyTimes="0;0.33933;0.37978;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c5)"><text x="34" y="226" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="226" fill="#CBD5E1" font-weight="400">Java  Spring Boot  REST APIs  Microservices  JPA / Hibernate</text></g>
+  <clipPath id="c6"><rect x="34" y="234" width="123.6" height="24"><animate attributeName="width" values="0;0;123.6;123.6;0" keyTimes="0;0.4;0.44045;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c6)"><text x="34" y="252" fill="#67E8F9" font-weight="600">$ stack --data</text></g>
+  <clipPath id="c7"><rect x="34" y="260" width="484.8" height="24"><animate attributeName="width" values="0;0;484.8;484.8;0" keyTimes="0;0.46067;0.50112;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c7)"><text x="34" y="278" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="278" fill="#CBD5E1" font-weight="400">Kafka  Redis  PostgreSQL  MySQL  Cassandra  Elasticsearch</text></g>
+  <clipPath id="c8"><rect x="34" y="286" width="115.2" height="24"><animate attributeName="width" values="0;0;115.2;115.2;0" keyTimes="0;0.52135;0.5618;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c8)"><text x="34" y="304" fill="#67E8F9" font-weight="600">$ stack --ops</text></g>
+  <clipPath id="c9"><rect x="34" y="312" width="350.4" height="24"><animate attributeName="width" values="0;0;350.4;350.4;0" keyTimes="0;0.58202;0.62247;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c9)"><text x="34" y="330" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="330" fill="#CBD5E1" font-weight="400">Docker  Jenkins  AWS  Linux  Nginx  Shell</text></g>
+  <clipPath id="c10"><rect x="34" y="338" width="90.0" height="24"><animate attributeName="width" values="0;0;90.0;90.0;0" keyTimes="0;0.6427;0.68315;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c10)"><text x="34" y="356" fill="#67E8F9" font-weight="600">$ learning</text></g>
+  <clipPath id="c11"><rect x="34" y="364" width="409.2" height="24"><animate attributeName="width" values="0;0;409.2;409.2;0" keyTimes="0;0.70337;0.74382;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c11)"><text x="34" y="382" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="382" fill="#CBD5E1" font-weight="400">DSA  System Design  LLMs  RAG  Agents  LangChain</text></g>
+  <clipPath id="c12"><rect x="34" y="390" width="73.2" height="24"><animate attributeName="width" values="0;0;73.2;73.2;0" keyTimes="0;0.76404;0.80449;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c12)"><text x="34" y="408" fill="#67E8F9" font-weight="600">$ status</text></g>
+  <clipPath id="c13"><rect x="34" y="416" width="417.6" height="24"><animate attributeName="width" values="0;0;417.6;417.6;0" keyTimes="0;0.82472;0.86517;0.965;1" dur="22.25s" repeatCount="indefinite"/></rect></clipPath>
+  <g clip-path="url(#c13)"><text x="34" y="434" fill="#F59E0B" font-weight="600">&#8250;</text><text x="50" y="434" fill="#CBD5E1" font-weight="400">online - build, break, debug, understand, improve</text></g>
+  <rect width="9" height="20" fill="#F59E0B" opacity="0.9"><animate attributeName="x" values="34;34;34;107.2;34;34;174.4;34;34;174.4;34;34;619.6;34;34;182.8;34;34;544.0;34;34;157.6;34;34;518.8;34;34;149.2;34;34;384.4;34;34;124.0;34;34;443.2;34;34;107.2;34;34;451.6;451.6" keyTimes="0;0.03586;0.03596;0.0764;0.09653;0.09663;0.13708;0.15720;0.1573;0.19775;0.21788;0.21798;0.25843;0.27855;0.27865;0.3191;0.33923;0.33933;0.37978;0.39990;0.4;0.44045;0.46057;0.46067;0.50112;0.52125;0.52135;0.5618;0.58192;0.58202;0.62247;0.64260;0.6427;0.68315;0.70327;0.70337;0.74382;0.76394;0.76404;0.80449;0.82462;0.82472;0.86517;1" dur="22.25s" repeatCount="indefinite"/><animate attributeName="y" values="80;80;80;80;106;106;106;132;132;132;158;158;158;184;184;184;210;210;210;236;236;236;262;262;262;288;288;288;314;314;314;340;340;340;366;366;366;392;392;392;418;418;418;418" keyTimes="0;0.03586;0.03596;0.0764;0.09653;0.09663;0.13708;0.15720;0.1573;0.19775;0.21788;0.21798;0.25843;0.27855;0.27865;0.3191;0.33923;0.33933;0.37978;0.39990;0.4;0.44045;0.46057;0.46067;0.50112;0.52125;0.52135;0.5618;0.58192;0.58202;0.62247;0.64260;0.6427;0.68315;0.70327;0.70337;0.74382;0.76394;0.76404;0.80449;0.82462;0.82472;0.86517;1" dur="22.25s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.9;0.15;0.9" dur="1s" repeatCount="indefinite"/></rect>
+</g>
+<rect x="1" y="480" width="898" height="5" rx="2" fill="url(#bar)"/>
+</svg>
