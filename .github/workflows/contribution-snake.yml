@@ -1,0 +1,46 @@
+name: Generate GitHub Contribution Snake
+
+on:
+  push:
+    branches:
+      - main
+
+  schedule:
+    - cron: "0 */12 * * *"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # --------------------------------
+      # Generate contribution snake
+      # --------------------------------
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: jugnu790
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+
+      # --------------------------------
+      # Publish to output branch
+      # --------------------------------
+
+      - name: Publish snake
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          build_dir: dist
+          target_branch: output
+          commit_message: "Update GitHub contribution snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
