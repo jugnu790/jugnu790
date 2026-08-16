@@ -6,19 +6,39 @@
 
 <br>
 
-<a href="https://github.com/jugnu790"><img src="https://komarev.com/ghpvc/?username=jugnu790&label=PROFILE%20VIEWS&color=06B6D4&style=for-the-badge" alt="Profile views"/></a>
-<a href="https://github.com/jugnu790?tab=followers"><img src="https://img.shields.io/github/followers/jugnu790?label=FOLLOWERS&style=for-the-badge&color=0F766E" alt="Followers"/></a>
-<a href="https://github.com/jugnu790?tab=repositories"><img src="https://img.shields.io/github/stars/jugnu790?affiliations=OWNER&label=STARS&style=for-the-badge&color=F59E0B" alt="Stars"/></a>
+<a href="https://github.com/jugnu790">
+<img src="https://komarev.com/ghpvc/?username=jugnu790&label=PROFILE%20VIEWS&color=06B6D4&style=for-the-badge" alt="Profile views"/>
+</a>
 
-<a href="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/"><img src="https://img.shields.io/badge/LinkedIn-Deepesh%20Upadhyay-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:deepeshupadhyay85@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://leetcode.com/maradox/"><img src="https://img.shields.io/badge/LeetCode-maradox-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/></a>
+<a href="https://github.com/jugnu790?tab=followers">
+<img src="https://img.shields.io/github/followers/jugnu790?label=FOLLOWERS&style=for-the-badge&color=0F766E" alt="Followers"/>
+</a>
+
+<a href="https://github.com/jugnu790?tab=repositories">
+<img src="https://img.shields.io/github/stars/jugnu790?affiliations=OWNER&label=STARS&style=for-the-badge&color=F59E0B" alt="Stars"/>
+</a>
+
+<br>
+
+<a href="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/">
+<img src="https://img.shields.io/badge/LinkedIn-Deepesh%20Upadhyay-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<a href="mailto:deepeshupadhyay85@gmail.com">
+<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+<a href="https://leetcode.com/maradox/">
+<img src="https://img.shields.io/badge/LeetCode-maradox-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+</a>
+
+<br><br>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
 </div>
 
-## Who's typing
+## 👨‍💻 Who's typing
 
 <div align="center">
 
@@ -26,61 +46,78 @@
 
 </div>
 
-I build backend services in the **Bharat Bill Payment** ecosystem — Java and Spring Boot, REST APIs, microservices that talk over Kafka, data in PostgreSQL, MySQL and Cassandra, everything containerised and shipped through Jenkins. Most of my week is API design, integration work, debugging production behaviour, and making services boring in the way production wants them to be.
+I am a **Software Engineer at NPCI Bharat BillPay Limited (NBBL)**, working primarily on backend systems using **Java, Spring Boot, REST APIs and microservices**.
 
-On the side I work with **React, Redux and JavaScript**, and I'm currently going deeper on **System Design, AWS, DevOps and AI/GenAI**.
+My work involves designing and integrating services, asynchronous communication through **Apache Kafka**, data management using **PostgreSQL, MySQL and Cassandra**, caching with **Redis**, and containerised deployments using **Docker and Jenkins**.
 
-> AI and GenAI tools listed further down are part of my **learning journey** — I don't present them as production experience.
+My day-to-day work includes:
 
-<img src="./assets/divider.svg" width="100%" alt=""/>
+- Backend API development
+- Microservice integration
+- Kafka-based asynchronous workflows
+- Database integration
+- Production debugging
+- Performance and reliability improvements
+- CI/CD and deployment support
+- Troubleshooting distributed-service behaviour
 
-## What the systems look like
+I also work with **React, Redux and JavaScript** and am currently going deeper into **System Design, AWS, DevOps and AI/GenAI**.
 
-A simplified view of the shape of work I do daily — request in, events on the bus, state in the stores, logs in the stack.
-
-<div align="center">
-
-<img src="./assets/architecture.svg" width="100%" alt="Animated microservices architecture"/>
-
-</div>
-
-### Events, not tight coupling
-
-<div align="center">
-
-<img src="./assets/kafka.svg" width="100%" alt="Animated Kafka producer to partition to consumer flow"/>
-
-</div>
-
-### From commit to monitored
-
-<div align="center">
-
-<img src="./assets/pipeline.svg" width="100%" alt="Animated CI/CD pipeline"/>
-
-</div>
+> AI and GenAI technologies listed below are part of my **learning journey** and are not presented as production experience.
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## The stack, in orbit
+## 🏗️ What the systems look like
+
+A simplified representation of the type of backend architecture I work with — requests enter through APIs, services communicate through events, state is stored across databases and caches, and applications are delivered through CI/CD pipelines.
 
 <div align="center">
 
-<img src="./assets/orbit.svg" width="440" alt="Orbiting technology stack"/>
+<img src="./assets/architecture.svg" width="100%" alt="Microservices architecture"/>
+
+</div>
+
+### ⚡ Events instead of tight coupling
+
+<div align="center">
+
+<img src="./assets/kafka.svg" width="100%" alt="Kafka producer, partition and consumer flow"/>
+
+</div>
+
+### 🚀 From commit to deployment
+
+<div align="center">
+
+<img src="./assets/pipeline.svg" width="100%" alt="CI/CD pipeline"/>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt=""/>
+
+## 🛠️ The stack
+
+<div align="center">
+
+<img src="./assets/orbit.svg" width="440" alt="Technology stack"/>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=java,spring,maven,hibernate,react,redux,js,html,css,tailwind&perline=10&theme=dark" alt="Languages and frameworks"/>
 
 <br>
 
-<img src="https://skillicons.dev/icons?i=java,spring,maven,hibernate,react,redux,js,html,css,tailwind&perline=10&theme=dark" alt="Language and framework icons"/>
+<img src="https://skillicons.dev/icons?i=kafka,redis,postgres,mysql,mongodb,docker,jenkins,aws,linux,nginx&perline=10&theme=dark" alt="Infrastructure and databases"/>
+
 <br>
-<img src="https://skillicons.dev/icons?i=kafka,redis,postgres,mysql,mongodb,docker,jenkins,aws,linux,nginx&perline=10&theme=dark" alt="Infrastructure icons"/>
-<br>
-<img src="https://skillicons.dev/icons?i=git,github,gitlab,postman,idea,vscode,python,pytorch&perline=10&theme=dark" alt="Tooling icons"/>
+
+<img src="https://skillicons.dev/icons?i=git,github,gitlab,postman,idea,vscode,python,pytorch&perline=10&theme=dark" alt="Tools and technologies"/>
 
 </div>
 
 <div align="center">
 
-<img src="./assets/skills.svg" width="100%" alt="Animated skill depth chart"/>
+<img src="./assets/skills.svg" width="100%" alt="Skill depth chart"/>
 
 </div>
 
@@ -99,10 +136,10 @@ A simplified view of the shape of work I do daily — request in, events on the 
 | Cache | Redis |
 | SQL | PostgreSQL · MySQL |
 | NoSQL | Cassandra · MongoDB |
-| Search & logs | Elasticsearch · Logstash · Kibana |
-| Containers & CI | Docker · Docker Compose · Jenkins |
+| Search & Logs | Elasticsearch · Logstash · Kibana |
+| Containers & CI/CD | Docker · Docker Compose · Jenkins |
 | Cloud & OS | AWS · Linux · Nginx · Tomcat |
-| Tools | Git · GitHub · GitLab · Postman · IntelliJ IDEA · VS Code |
+| Development Tools | Git · GitHub · GitLab · Postman · IntelliJ IDEA · VS Code |
 | AI / GenAI *(learning)* | OpenAI · Claude · Gemini · Copilot · Cursor · LangChain · LangGraph · Hugging Face · Ollama · Chroma · Pinecone |
 | Fundamentals | DSA · System Design · Distributed Systems |
 
@@ -110,92 +147,111 @@ A simplified view of the shape of work I do daily — request in, events on the 
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## Work
+## 💼 Work
 
-**Software Engineer · NPCI Bharat BillPay Limited (NBBL) · October 2024 – present**
+### Software Engineer — NPCI Bharat BillPay Limited
 
-| Area | What that means day to day |
+**October 2024 – Present**
+
+| Area | Experience |
 |:---|:---|
-| Backend | Java, Spring Boot, REST API design and integration |
-| Architecture | Microservices, service-to-service communication |
-| Messaging | Kafka producers and consumers for async workflows |
-| Data | PostgreSQL, MySQL, Cassandra, Redis caching |
-| Delivery | Docker images, Jenkins pipelines, Linux environments |
+| Backend | Java, Spring Boot, REST API development and integration |
+| Architecture | Microservices and service-to-service communication |
+| Messaging | Apache Kafka producers and consumers |
+| Databases | PostgreSQL, MySQL and Cassandra |
+| Caching | Redis |
+| Delivery | Docker, Jenkins and Linux environments |
 | Operations | Debugging, production support, performance and reliability |
+| Frontend | React, Redux and JavaScript |
 
-Projects I've contributed to include **AMEX Utility** and **Short.io microservices**, plus the supporting backend services around them.
+Projects I have contributed to include **AMEX Utility** and **Short.io microservices**, along with supporting backend services around them.
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## GitHub activity
+## 📊 GitHub activity
 
-<sub>These four cards are generated from the GitHub API by a workflow in this repo — no third-party rendering service, so they can't rate-limit or go grey.</sub>
+The profile statistics and visual cards below are generated by workflows in this repository using GitHub data.
 
 <div align="center">
 
-<img src="./assets/stats.svg" width="48%" alt="Contribution stats"/>
+<img src="./assets/stats.svg" width="48%" alt="Contribution statistics"/>
+
 <img src="./assets/langs.svg" width="48%" alt="Top languages"/>
 
 <br><br>
 
-<img src="./assets/highlights.svg" width="100%" alt="Profile highlights"/>
-
-<br><br>
-
-<img src="./assets/activity.svg" width="100%" alt="Contribution activity heatmap"/>
-
-<br><br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg" width="100%" alt="Contribution snake"/>
-</picture>
+<img src="./assets/highlights.svg" width="100%" alt="GitHub profile highlights"/>
 
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## How I work
+## 🔄 How I work
 
 <div align="center">
 
-<img src="./assets/loop.svg" width="480" alt="Learn, build, break, debug, understand, improve"/>
+<img src="./assets/loop.svg" width="480" alt="Learn, build, break, debug, understand and improve"/>
 
 </div>
 
-Good software isn't just code that runs. It should be understandable six months later, debuggable at 2am, and honest about its failure modes. I care about performance, observability and reliability more than clever abstractions.
+Good software is not just code that runs.
+
+It should be:
+
+- Understandable six months later
+- Debuggable when something breaks
+- Observable in production
+- Reliable under failure
+- Simple enough to maintain
+- Honest about its limitations
+
+I care more about **performance, observability and reliability** than clever abstractions.
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## What I'm learning in 2026
+## 📚 What I'm learning in 2026
 
 | Track | Focus | Status |
 |:---|:---|:---:|
-| DSA | Advanced problem solving on LeetCode & GFG | 🔄 |
-| System Design | Distributed systems, scaling patterns | 🔄 |
+| DSA | Advanced problem solving on LeetCode & GeeksforGeeks | 🔄 |
+| System Design | Distributed systems and scalability patterns | 🔄 |
 | Kafka | Event-driven architecture in depth | 🔄 |
-| DevOps | Docker, Jenkins, Kubernetes | 🔄 |
+| DevOps | Docker, Jenkins and Kubernetes | 🔄 |
 | AWS | Cloud engineering fundamentals | 🔄 |
 | Security | Secure application development | 🔄 |
-| React | Production-grade frontend | 🔄 |
-| AI / GenAI | LLMs, RAG, embeddings, agents, LangChain / LangGraph | 🔄 |
-| Open source | Meaningful contributions | 🔄 |
+| React | Production-grade frontend development | 🔄 |
+| AI / GenAI | LLMs, RAG, embeddings, agents, LangChain and LangGraph | 🔄 |
+| Open Source | Meaningful open-source contributions | 🔄 |
 
 <img src="./assets/divider.svg" width="100%" alt=""/>
 
-## Fun fact
+## 🐛 Fun fact
 
-The first computer "bug" was a literal one — a moth pulled out of the Harvard Mark II in 1947 and taped into the logbook. Sometimes the bug really is a bug. 🐛
+The first recorded computer bug was a literal bug — a moth was found inside the Harvard Mark II computer in 1947 and taped into the logbook.
+
+Sometimes the bug really is a bug. 🐛
 
 <div align="center">
 
-<a href="https://github.com/jugnu790"><img src="https://img.shields.io/badge/GitHub-jugnu790-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
-<a href="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/"><img src="https://img.shields.io/badge/LinkedIn-Deepesh%20Upadhyay-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://leetcode.com/maradox/"><img src="https://img.shields.io/badge/LeetCode-maradox-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/></a>
-<a href="mailto:deepeshupadhyay85@gmail.com"><img src="https://img.shields.io/badge/Email-deepeshupadhyay85%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="https://github.com/jugnu790">
+<img src="https://img.shields.io/badge/GitHub-jugnu790-181717?style=for-the-badge&logo=github" alt="GitHub"/>
+</a>
 
-<img src="./assets/footer.svg" width="100%" alt=""/>
+<a href="https://www.linkedin.com/in/deepesh-upadhyay-34bb3a169/">
+<img src="https://img.shields.io/badge/LinkedIn-Deepesh%20Upadhyay-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+
+<a href="https://leetcode.com/maradox/">
+<img src="https://img.shields.io/badge/LeetCode-maradox-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
+</a>
+
+<a href="mailto:deepeshupadhyay85@gmail.com">
+<img src="https://img.shields.io/badge/Email-deepeshupadhyay85%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+<br><br>
+
+<img src="./assets/footer.svg" width="100%" alt="Footer"/>
 
 </div>
 
@@ -214,24 +270,11 @@ alt="GitHub statistics"
 
 | Metric | Value |
 |---|---:|
-| Repositories | 27 |
-| Stars | 24 |
+| Repositories | 0 |
+| Stars | 0 |
 | Forks | 0 |
-| Followers | 2 |
-| Following | 3 |
-
----
-
-## 🐍 Contribution Snake
-
-<p align="center">
-
-<img
-src="./assets/github-contribution-grid-snake.svg"
-alt="GitHub contribution snake"
-/>
-
-</p>
+| Followers | 0 |
+| Following | 0 |
 
 ---
 
@@ -263,24 +306,6 @@ alt="Top repositories"
 
 ### 🔄 Last automated update
 
-`2026-08-16 05:41 UTC`
+`Generated automatically by GitHub Actions`
 
 <!-- AUTO-GENERATED-END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
