@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       # ---------------------------------------------------------
-      # 1. Checkout repository
+      # Checkout using GitHub's built-in token
       # ---------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          token: ${{ secrets.PROFILE_GITHUB_TOKEN }}
 
       # ---------------------------------------------------------
-      # 2. Setup Python
+      # Setup Python
       # ---------------------------------------------------------
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -33,7 +33,7 @@ jobs:
           python-version: "3.12"
 
       # ---------------------------------------------------------
-      # 3. Install dependencies
+      # Install dependencies
       # ---------------------------------------------------------
       - name: Install dependencies
         run: |
@@ -44,7 +44,7 @@ jobs:
           fi
 
       # ---------------------------------------------------------
-      # 4. Fetch GitHub data
+      # Fetch GitHub profile data
       # ---------------------------------------------------------
       - name: Fetch GitHub data
         env:
@@ -54,21 +54,21 @@ jobs:
           python scripts/fetch_data.py
 
       # ---------------------------------------------------------
-      # 5. Process GitHub data
+      # Process data
       # ---------------------------------------------------------
       - name: Process GitHub data
         run: |
           python scripts/process_data.py
 
       # ---------------------------------------------------------
-      # 6. Build generated cards
+      # Build cards
       # ---------------------------------------------------------
       - name: Build generated cards
         run: |
           python scripts/build_cards.py
 
       # ---------------------------------------------------------
-      # 7. Generate contribution snake
+      # Generate contribution snake
       # ---------------------------------------------------------
       - name: Generate contribution snake
         run: |
@@ -79,7 +79,7 @@ jobs:
           fi
 
       # ---------------------------------------------------------
-      # 8. Update README
+      # Update README
       # ---------------------------------------------------------
       - name: Update README
         run: |
@@ -90,17 +90,13 @@ jobs:
           fi
 
       # ---------------------------------------------------------
-      # 9. Commit generated files
+      # Commit generated files
       # ---------------------------------------------------------
       - name: Commit generated changes
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          echo "Checking generated changes..."
-
-          git status --short
 
           git add README.md
           git add assets/
@@ -114,8 +110,11 @@ jobs:
             git add output/
           fi
 
+          echo "Changes to be committed:"
+          git status --short
+
           if git diff --cached --quiet; then
-            echo "No generated changes detected."
+            echo "No changes detected."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: sync GitHub profile data"
@@ -123,48 +122,18 @@ jobs:
           fi
 
       # ---------------------------------------------------------
-      # 10. Sync with remote before pushing
+      # Get latest remote branch
       # ---------------------------------------------------------
       - name: Sync with remote
         if: steps.commit.outputs.changed == 'true'
         run: |
-          echo "Fetching latest remote main..."
-
           git fetch origin main
-
-          echo "Rebasing local commit onto latest remote main..."
-
           git rebase origin/main
 
       # ---------------------------------------------------------
-      # 11. Push generated changes
+      # Push using built-in GITHUB_TOKEN
       # ---------------------------------------------------------
       - name: Push changes
         if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
         run: |
-          echo "Pushing generated changes..."
-
-          for i in 1 2 3; do
-            if git push origin HEAD:main; then
-              echo "Push successful."
-              exit 0
-            fi
-
-            echo "Push failed. Remote branch changed."
-            echo "Fetching latest main and rebasing..."
-
-            git fetch origin main
-
-            if ! git rebase origin/main; then
-              echo "Rebase failed."
-              git rebase --abort || true
-              exit 1
-            fi
-
-            sleep 2
-          done
-
-          echo "Push failed after 3 attempts."
-          exit 1
+          git push origin HEAD:main
