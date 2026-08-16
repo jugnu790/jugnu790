@@ -1,6 +1,5 @@
 import json
 import os
-import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
@@ -14,12 +13,6 @@ import requests
 
 USERNAME = os.getenv("GITHUB_USERNAME", "jugnu790")
 
-# PROFILE_GITHUB_TOKEN is preferred because a personal token can
-# provide better access to the authenticated user's contribution
-# information.
-#
-# If it is not configured, fall back to GitHub Actions'
-# automatically provided GITHUB_TOKEN.
 TOKEN = (
     os.getenv("PROFILE_GITHUB_TOKEN")
     or os.getenv("GITHUB_TOKEN")
@@ -33,11 +26,10 @@ DATA_DIR = ROOT / "data"
 
 DATA_DIR.mkdir(
     parents=True,
-    exist_ok=True
+    exist_ok=True,
 )
 
 REQUEST_TIMEOUT = 30
-
 API_VERSION = "2022-11-28"
 
 
@@ -69,12 +61,6 @@ def github_get(
     endpoint: str,
     params: dict[str, Any] | None = None,
 ) -> Any:
-    """
-    Perform a GET request against the GitHub REST API.
-
-    Raises an exception when GitHub returns an error.
-    """
-
     url = f"{BASE_URL}{endpoint}"
 
     response = requests.get(
@@ -108,14 +94,11 @@ def github_graphql(
     query: str,
     variables: dict[str, Any],
 ) -> dict[str, Any]:
-    """
-    Execute a GitHub GraphQL query.
-    """
 
     if not TOKEN:
         raise RuntimeError(
             "No GitHub token is available. "
-            "Set GITHUB_TOKEN or PROFILE_GITHUB_TOKEN."
+            "Set PROFILE_GITHUB_TOKEN or GITHUB_TOKEN."
         )
 
     response = requests.post(
@@ -158,7 +141,7 @@ def github_graphql(
             "GitHub GraphQL returned one or more errors."
         )
 
-    return payload["data"]
+    return payload.get("data", {})
 
 
 # ============================================================
@@ -218,22 +201,12 @@ def fetch_repositories() -> list[dict[str, Any]]:
 # ============================================================
 
 def fetch_events() -> list[dict[str, Any]]:
-    """
-    Fetch public GitHub events.
-
-    GitHub limits this endpoint to recent public activity.
-    Therefore events are NOT used as the authoritative source
-    for the contribution calendar.
-    """
-
     print("Fetching public events...")
 
     events: list[dict[str, Any]] = []
 
     page = 1
 
-    # GitHub's public-events endpoint has a limited history.
-    # Ten pages is enough for our recent activity dashboard.
     while page <= 10:
 
         data = github_get(
@@ -335,12 +308,6 @@ def fetch_following() -> list[dict[str, Any]]:
 # ============================================================
 
 def fetch_starred_repositories() -> list[dict[str, Any]]:
-    """
-    Fetch repositories starred by the user.
-
-    This is separate from repositories owned by the user.
-    """
-
     print("Fetching starred repositories...")
 
     starred: list[dict[str, Any]] = []
@@ -373,6 +340,17 @@ def fetch_starred_repositories() -> list[dict[str, Any]]:
 # ============================================================
 # CONTRIBUTION GRAPHQL QUERY
 # ============================================================
+#
+# IMPORTANT:
+# The following obsolete fields were removed:
+#
+# issueContributionsByRepository
+# pullRequestContributionsByRepository
+# pullRequestReviewContributionsByRepository
+# repositoryContributionsByRepository
+#
+# These were causing the GraphQL errors in GitHub Actions.
+# ============================================================
 
 CONTRIBUTIONS_QUERY = """
 query(
@@ -383,10 +361,12 @@ query(
     user(login: $login) {
         login
         name
+
         contributionsCollection(
             from: $from,
             to: $to
         ) {
+
             startedAt
             endedAt
 
@@ -398,10 +378,12 @@ query(
                     name
                     nameWithOwner
                     url
+
                     primaryLanguage {
                         name
                     }
                 }
+
                 contributions {
                     totalCount
                 }
@@ -420,30 +402,6 @@ query(
             }
 
             repositoryContributions {
-                totalCount
-            }
-
-            issueContributionsByRepository(
-                first: 100
-            ) {
-                totalCount
-            }
-
-            pullRequestContributionsByRepository(
-                first: 100
-            ) {
-                totalCount
-            }
-
-            pullRequestReviewContributionsByRepository(
-                first: 100
-            ) {
-                totalCount
-            }
-
-            repositoryContributionsByRepository(
-                first: 100
-            ) {
                 totalCount
             }
 
@@ -470,16 +428,6 @@ query(
 # ============================================================
 
 def fetch_contributions() -> dict[str, Any]:
-    """
-    Fetch the authenticated user's contribution calendar and
-    contribution categories.
-
-    The GitHub contribution calendar is the authoritative source
-    for the contribution heatmap.
-
-    The range covers approximately the previous 365 days.
-    """
-
     print("Fetching contribution calendar...")
 
     now = datetime.now(timezone.utc)
@@ -590,52 +538,74 @@ def main() -> None:
     print("=" * 70)
     print(f"Username: {USERNAME}")
     print(
-        f"Token available: {'yes' if TOKEN else 'no'}"
+        f"Token available: "
+        f"{'yes' if TOKEN else 'no'}"
     )
     print("=" * 70)
     print()
 
     # --------------------------------------------------------
-    # Main GitHub data
+    # Profile
     # --------------------------------------------------------
 
     profile = fetch_profile()
 
+    # --------------------------------------------------------
+    # Repositories
+    # --------------------------------------------------------
+
     repositories = fetch_repositories()
+
+    # --------------------------------------------------------
+    # Public activity
+    # --------------------------------------------------------
 
     events = fetch_events()
 
     # --------------------------------------------------------
-    # Social data
+    # Followers
     # --------------------------------------------------------
 
     try:
         followers = fetch_followers()
+
     except Exception as exc:
         print(
-            f"WARNING: Could not fetch followers: {exc}"
+            f"WARNING: Could not fetch followers: "
+            f"{exc}"
         )
         followers = []
 
+    # --------------------------------------------------------
+    # Following
+    # --------------------------------------------------------
+
     try:
         following = fetch_following()
+
     except Exception as exc:
         print(
-            f"WARNING: Could not fetch following: {exc}"
+            f"WARNING: Could not fetch following: "
+            f"{exc}"
         )
         following = []
 
+    # --------------------------------------------------------
+    # Starred repositories
+    # --------------------------------------------------------
+
     try:
         starred = fetch_starred_repositories()
+
     except Exception as exc:
         print(
-            f"WARNING: Could not fetch starred repositories: "
-            f"{exc}"
+            "WARNING: Could not fetch starred "
+            f"repositories: {exc}"
         )
         starred = []
 
     # --------------------------------------------------------
-    # Contribution data
+    # Contributions
     # --------------------------------------------------------
 
     contributions = fetch_contributions()
@@ -666,7 +636,7 @@ def main() -> None:
     }
 
     # --------------------------------------------------------
-    # Save everything
+    # Save JSON files
     # --------------------------------------------------------
 
     save_json(
@@ -723,50 +693,86 @@ def main() -> None:
         {},
     )
 
+    issue_contributions = collection.get(
+        "issueContributions",
+        {},
+    )
+
+    pull_request_contributions = collection.get(
+        "pullRequestContributions",
+        {},
+    )
+
+    review_contributions = collection.get(
+        "pullRequestReviewContributions",
+        {},
+    )
+
+    repository_contributions = collection.get(
+        "repositoryContributions",
+        {},
+    )
+
     print()
     print("=" * 70)
     print("FETCH COMPLETE")
     print("=" * 70)
+
     print(
         f"Repositories: "
         f"{len(repositories)}"
     )
+
     print(
         f"Public events fetched: "
         f"{len(events)}"
     )
+
     print(
         f"Followers fetched: "
         f"{len(followers)}"
     )
+
     print(
         f"Following fetched: "
         f"{len(following)}"
     )
+
     print(
         f"Starred repositories: "
         f"{len(starred)}"
     )
+
     print(
         f"Contribution total: "
         f"{calendar.get('totalContributions', 0)}"
     )
+
     print(
         f"Commit contributions: "
         f"{collection.get('totalCommitContributions', 0)}"
     )
+
     print(
         f"Issue contributions: "
-        f"{collection.get('issueContributions', {}).get('totalCount', 0)}"
+        f"{issue_contributions.get('totalCount', 0)}"
     )
+
     print(
-        f"Pull requests: "
-        f"{collection.get('pullRequestContributions', {}).get('totalCount', 0)}"
+        f"Pull request contributions: "
+        f"{pull_request_contributions.get('totalCount', 0)}"
     )
+
     print(
-        f"PR reviews: "
-        f"{collection.get('pullRequestReviewContributions', {}).get('totalCount', 0)}"
+        f"Pull request review contributions: "
+        f"{review_contributions.get('totalCount', 0)}"
     )
+
+    print(
+        f"Repository contributions: "
+        f"{repository_contributions.get('totalCount', 0)}"
+    )
+
     print("=" * 70)
     print()
 
@@ -776,26 +782,4 @@ def main() -> None:
 # ============================================================
 
 if __name__ == "__main__":
-
-    try:
-        main()
-
-    except KeyboardInterrupt:
-
-        print(
-            "Interrupted by user."
-        )
-
-        sys.exit(130)
-
-    except Exception as exc:
-
-        print()
-        print("=" * 70)
-        print("FATAL ERROR")
-        print("=" * 70)
-        print(exc)
-        print("=" * 70)
-        print()
-
-        sys.exit(1)
+    main()
