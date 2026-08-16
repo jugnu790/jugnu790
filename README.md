@@ -273,35 +273,21 @@ alt="GitHub statistics"
 | Repositories | 27 |
 | Stars | 24 |
 | Forks | 0 |
-| Followers | 0 |
-| Following | 0 |
+| Followers | 2 |
+| Following | 3 |
 
 ---
 
-<h2>🐍 Contribution Snake</h2>
+## 🐍 Contribution Snake
 
-<div align="center">
+<p align="center">
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake-dark.svg"
-  />
+<img
+src="./assets/github-contribution-grid-snake.svg"
+alt="GitHub contribution snake"
+/>
 
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg"
-  />
-
-  <img
-    src="https://raw.githubusercontent.com/jugnu790/jugnu790/output/github-contribution-grid-snake.svg"
-    width="100%"
-    alt="Contribution Snake"
-  />
-
-</picture>
-
-</div>
+</p>
 
 ---
 
@@ -333,8 +319,9 @@ alt="Top repositories"
 
 ### 🔄 Last automated update
 
-`2026-08-16 06:07 UTC`
+`2026-08-16 06:09 UTC`
 
 <!-- AUTO-GENERATED-END -->
+
 
 

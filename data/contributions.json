@@ -1,15 +1,29 @@
 {
   "username": "jugnu790",
   "range": {
-    "from": "2025-08-16T06:07:31.779032+00:00",
-    "to": "2026-08-16T06:07:31.779032+00:00"
+    "from": "2025-08-16T06:09:39.162253+00:00",
+    "to": "2026-08-16T06:09:39.162253+00:00"
   },
   "collection": {
-    "startedAt": "2025-08-16T06:07:31Z",
-    "endedAt": "2026-08-16T06:07:31Z",
-    "totalCommitContributions": 0,
+    "startedAt": "2025-08-16T06:09:39Z",
+    "endedAt": "2026-08-16T06:09:39Z",
+    "totalCommitContributions": 19,
     "restrictedContributionsCount": 0,
-    "commitContributionsByRepository": [],
+    "commitContributionsByRepository": [
+      {
+        "repository": {
+          "name": "jugnu790",
+          "nameWithOwner": "jugnu790/jugnu790",
+          "url": "https://github.com/jugnu790/jugnu790",
+          "primaryLanguage": {
+            "name": "Python"
+          }
+        },
+        "contributions": {
+          "totalCount": 19
+        }
+      }
+    ],
     "issueContributions": {
       "totalCount": 0
     },
@@ -20,10 +34,10 @@
       "totalCount": 0
     },
     "repositoryContributions": {
-      "totalCount": 0
+      "totalCount": 1
     },
     "contributionCalendar": {
-      "totalContributions": 0,
+      "totalContributions": 20,
       "weeks": [
         {
           "contributionDays": [
@@ -2411,9 +2425,9 @@
             },
             {
               "date": "2026-08-15",
-              "contributionCount": 0,
+              "contributionCount": 1,
               "weekday": 6,
-              "color": "#ebedf0"
+              "color": "#216e39"
             }
           ]
         },
@@ -2421,9 +2435,9 @@
           "contributionDays": [
             {
               "date": "2026-08-16",
-              "contributionCount": 0,
+              "contributionCount": 19,
               "weekday": 0,
-              "color": "#ebedf0"
+              "color": "#216e39"
             }
           ]
         }
