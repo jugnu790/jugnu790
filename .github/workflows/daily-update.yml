@@ -1,0 +1,100 @@
+name: Daily Profile Update
+
+on:
+  schedule:
+    # Runs every day at 18:30 UTC
+    # = 00:00 IST (next day)
+    - cron: "30 18 * * *"
+
+  # Allows you to test the workflow manually
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  daily-update:
+    name: Update Profile Data
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Install dependencies if requirements.txt exists
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+          fi
+
+      # 4. Run data collection
+      - name: Fetch GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: jugnu790
+        run: |
+          if [ -f scripts/fetch_data.py ]; then
+            python scripts/fetch_data.py
+          else
+            echo "fetch_data.py not found - skipping"
+          fi
+
+      # 5. Generate statistics/assets
+      - name: Generate profile statistics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: jugnu790
+        run: |
+          if [ -f scripts/generate_stats.py ]; then
+            python scripts/generate_stats.py
+          else
+            echo "generate_stats.py not found - skipping"
+          fi
+
+      # 6. Update README if required
+      - name: Update README
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: jugnu790
+        run: |
+          if [ -f scripts/update_readme.py ]; then
+            python scripts/update_readme.py
+          else
+            echo "update_readme.py not found - skipping"
+          fi
+
+      # 7. Check whether anything actually changed
+      - name: Check changes
+        id: changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected."
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes detected."
+          fi
+
+      # 8. Commit and push only real changes
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          git commit -m "chore: update profile data"
+
+          git push
