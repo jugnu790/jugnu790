@@ -18,17 +18,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # ==========================================
+      # CHECKOUT
+      # ==========================================
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # ==========================================
+      # GENERATE CONTRIBUTION SNAKE
+      # ==========================================
       - name: Generate contribution snake
         uses: Platane/snk@v3
         with:
           github_user_name: jugnu790
+
           outputs: |
-            assets/github-contribution-grid-snake.svg
+            assets/github-contribution-grid-snake.svg?palette=github-light
             assets/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # ==========================================
+      # COMMIT CHANGES
+      # ==========================================
       - name: Commit snake
         run: |
           git config user.name "github-actions[bot]"
