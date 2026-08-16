@@ -1,11 +1,6 @@
 name: Profile Sync
 
 on:
-  schedule:
-    # Runs approximately once per hour.
-    # GitHub scheduled workflows are best-effort and may be delayed.
-    - cron: "0 * * * *"
-
   workflow_dispatch:
 
 permissions:
@@ -20,104 +15,156 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-      # ------------------------------------------------------
-      # CHECKOUT
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 1. Checkout repository
+      # ---------------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
+          token: ${{ secrets.PROFILE_GITHUB_TOKEN }}
 
-      # ------------------------------------------------------
-      # PYTHON
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 2. Setup Python
+      # ---------------------------------------------------------
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-          cache: "pip"
 
-      # ------------------------------------------------------
-      # DEPENDENCIES
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 3. Install dependencies
+      # ---------------------------------------------------------
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
 
-      # ------------------------------------------------------
-      # FETCH GITHUB DATA
-      # ------------------------------------------------------
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
+      # ---------------------------------------------------------
+      # 4. Fetch GitHub data
+      # ---------------------------------------------------------
       - name: Fetch GitHub data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
-          GITHUB_USERNAME: jugnu790
+          GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
         run: |
           python scripts/fetch_data.py
 
-      # ------------------------------------------------------
-      # PROCESS DATA
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 5. Process GitHub data
+      # ---------------------------------------------------------
       - name: Process GitHub data
         run: |
           python scripts/process_data.py
 
-      # ------------------------------------------------------
-      # BUILD CARDS
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 6. Build generated cards
+      # ---------------------------------------------------------
       - name: Build generated cards
         run: |
           python scripts/build_cards.py
 
-      # ------------------------------------------------------
-      # CONTRIBUTION SNAKE
-      # ------------------------------------------------------
-
+      # ---------------------------------------------------------
+      # 7. Generate contribution snake
+      # ---------------------------------------------------------
       - name: Generate contribution snake
-        uses: Platane/snk@v3
-        with:
-          github_user_name: jugnu790
-          outputs: |
-            assets/github-contribution-grid-snake.svg
-            assets/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      # ------------------------------------------------------
-      # README
-      # ------------------------------------------------------
-
-      - name: Update README
-        env:
-          GITHUB_USERNAME: jugnu790
         run: |
-          python scripts/update_readme.py
+          if [ -f scripts/generate_snake.py ]; then
+            python scripts/generate_snake.py
+          else
+            echo "generate_snake.py not found, skipping."
+          fi
 
-      # ------------------------------------------------------
-      # COMMIT GENERATED FILES
-      # ------------------------------------------------------
+      # ---------------------------------------------------------
+      # 8. Update README
+      # ---------------------------------------------------------
+      - name: Update README
+        run: |
+          if [ -f scripts/update_readme.py ]; then
+            python scripts/update_readme.py
+          else
+            echo "update_readme.py not found, skipping."
+          fi
 
-      - name: Commit only if generated data changed
+      # ---------------------------------------------------------
+      # 9. Commit generated files
+      # ---------------------------------------------------------
+      - name: Commit generated changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data assets README.md
-
-          if git diff --cached --quiet; then
-            echo "No generated changes detected."
-            echo "Nothing to commit."
-            exit 0
-          fi
+          echo "Checking generated changes..."
 
           git status --short
 
-          git commit -m "chore: sync GitHub profile data"
+          git add README.md
+          git add assets/
+          git add data/
 
-          git push
+          if [ -d "dist" ]; then
+            git add dist/
+          fi
+
+          if [ -d "output" ]; then
+            git add output/
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No generated changes detected."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: sync GitHub profile data"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # ---------------------------------------------------------
+      # 10. Sync with remote before pushing
+      # ---------------------------------------------------------
+      - name: Sync with remote
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          echo "Fetching latest remote main..."
+
+          git fetch origin main
+
+          echo "Rebasing local commit onto latest remote main..."
+
+          git rebase origin/main
+
+      # ---------------------------------------------------------
+      # 11. Push generated changes
+      # ---------------------------------------------------------
+      - name: Push changes
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
+        run: |
+          echo "Pushing generated changes..."
+
+          for i in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Push successful."
+              exit 0
+            fi
+
+            echo "Push failed. Remote branch changed."
+            echo "Fetching latest main and rebasing..."
+
+            git fetch origin main
+
+            if ! git rebase origin/main; then
+              echo "Rebase failed."
+              git rebase --abort || true
+              exit 1
+            fi
+
+            sleep 2
+          done
+
+          echo "Push failed after 3 attempts."
+          exit 1
