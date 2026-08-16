@@ -322,3 +322,71 @@ alt="Top repositories"
 `2026-08-16 06:20 UTC`
 
 
+
+<!-- AUTO-GENERATED-START -->
+
+## 📊 Live GitHub Statistics
+
+<p align="center">
+
+<img
+src="./assets/stats-card.svg"
+alt="GitHub statistics"
+/>
+
+</p>
+
+| Metric | Value |
+|---|---:|
+| Repositories | 27 |
+| Stars | 24 |
+| Forks | 0 |
+| Followers | 2 |
+| Following | 3 |
+
+---
+
+## 🐍 Contribution Snake
+
+<p align="center">
+
+<img
+src="./assets/github-contribution-grid-snake.svg"
+alt="GitHub contribution snake"
+/>
+
+</p>
+
+---
+
+## 💻 Languages
+
+<p align="center">
+
+<img
+src="./assets/languages-card.svg"
+alt="Programming languages"
+/>
+
+</p>
+
+---
+
+## 🚀 Top Repositories
+
+<p align="center">
+
+<img
+src="./assets/repositories-card.svg"
+alt="Top repositories"
+/>
+
+</p>
+
+---
+
+### 🔄 Last automated update
+
+`2026-08-16 06:29 UTC`
+
+<!-- AUTO-GENERATED-END -->
