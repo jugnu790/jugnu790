@@ -20,10 +20,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # ------------------------------------------------------
+      # CHECKOUT
+      # ------------------------------------------------------
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # ------------------------------------------------------
+      # PYTHON
+      # ------------------------------------------------------
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,22 +40,46 @@ jobs:
           python-version: "3.12"
           cache: "pip"
 
+      # ------------------------------------------------------
+      # DEPENDENCIES
+      # ------------------------------------------------------
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      # ------------------------------------------------------
+      # FETCH GITHUB DATA
+      # ------------------------------------------------------
+
       - name: Fetch GitHub data
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_GITHUB_TOKEN: ${{ secrets.PROFILE_GITHUB_TOKEN }}
           GITHUB_USERNAME: jugnu790
-        run: python scripts/fetch_data.py
+        run: |
+          python scripts/fetch_data.py
+
+      # ------------------------------------------------------
+      # PROCESS DATA
+      # ------------------------------------------------------
 
       - name: Process GitHub data
-        run: python scripts/process_data.py
+        run: |
+          python scripts/process_data.py
+
+      # ------------------------------------------------------
+      # BUILD CARDS
+      # ------------------------------------------------------
 
       - name: Build generated cards
-        run: python scripts/build_cards.py
+        run: |
+          python scripts/build_cards.py
+
+      # ------------------------------------------------------
+      # CONTRIBUTION SNAKE
+      # ------------------------------------------------------
 
       - name: Generate contribution snake
         uses: Platane/snk@v3
@@ -56,10 +89,19 @@ jobs:
             assets/github-contribution-grid-snake.svg
             assets/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # ------------------------------------------------------
+      # README
+      # ------------------------------------------------------
+
       - name: Update README
         env:
           GITHUB_USERNAME: jugnu790
-        run: python scripts/update_readme.py
+        run: |
+          python scripts/update_readme.py
+
+      # ------------------------------------------------------
+      # COMMIT GENERATED FILES
+      # ------------------------------------------------------
 
       - name: Commit only if generated data changed
         run: |
@@ -69,9 +111,13 @@ jobs:
           git add data assets README.md
 
           if git diff --cached --quiet; then
-            echo "No generated changes detected. Nothing to commit."
+            echo "No generated changes detected."
+            echo "Nothing to commit."
             exit 0
           fi
 
+          git status --short
+
           git commit -m "chore: sync GitHub profile data"
+
           git push
