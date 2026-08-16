@@ -1,5 +1,18 @@
 {
   "username": "jugnu790",
-  "updated_at": "2026-08-16T04:24:50.358899+00:00",
-  "source": "GitHub API"
+  "updated_at": "2026-08-16T04:27:07.522717+00:00",
+  "source": [
+    "GitHub REST API",
+    "GitHub GraphQL API"
+  ],
+  "api_version": "2022-11-28",
+  "data_description": {
+    "profile": true,
+    "repositories": true,
+    "events": true,
+    "followers": true,
+    "following": true,
+    "starred_repositories": true,
+    "contributions": true
+  }
 }
