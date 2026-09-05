@@ -1,12 +1,12 @@
 {
   "username": "jugnu790",
   "range": {
-    "from": "2025-09-05T08:06:05.220952+00:00",
-    "to": "2026-09-05T08:06:05.220952+00:00"
+    "from": "2025-09-05T12:25:07.448183+00:00",
+    "to": "2026-09-05T12:25:07.448183+00:00"
   },
   "collection": {
-    "startedAt": "2025-09-05T08:06:05Z",
-    "endedAt": "2026-09-05T08:06:05Z",
+    "startedAt": "2025-09-05T12:25:07Z",
+    "endedAt": "2026-09-05T12:25:07Z",
     "totalCommitContributions": 20,
     "restrictedContributionsCount": 0,
     "commitContributionsByRepository": [
