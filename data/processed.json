@@ -6,7 +6,7 @@
     "company": "NPCI Bharat BillPay Limited (NBBL)",
     "location": "Chennai",
     "blog": "",
-    "public_repos": 28,
+    "public_repos": 29,
     "public_gists": 0,
     "followers": 2,
     "following": 3,
@@ -14,8 +14,8 @@
     "updated_at": "2026-08-16T06:07:45Z"
   },
   "repositories": {
-    "total": 28,
-    "public": 28,
+    "total": 29,
+    "public": 29,
     "forks": 0,
     "stars": 24,
     "open_issues": 0,
@@ -23,8 +23,8 @@
   },
   "languages": {
     "JavaScript": 13,
+    "Python": 4,
     "HTML": 4,
-    "Python": 3,
     "Jupyter Notebook": 1,
     "Java": 1,
     "PHP": 1,
@@ -49,7 +49,7 @@
       "stars": 1,
       "forks": 0,
       "language": "Python",
-      "updated_at": "2026-09-06T13:57:37Z"
+      "updated_at": "2026-09-06T16:49:11Z"
     },
     {
       "name": "Crypto-Scrapping",
@@ -133,10 +133,10 @@
     }
   ],
   "events": {
-    "total": 39,
+    "total": 40,
     "types": {
       "PushEvent": 38,
-      "CreateEvent": 1
+      "CreateEvent": 2
     }
   }
 }
