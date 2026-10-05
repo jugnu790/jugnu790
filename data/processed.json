@@ -49,7 +49,7 @@
       "stars": 1,
       "forks": 0,
       "language": "Python",
-      "updated_at": "2026-10-05T01:39:13Z"
+      "updated_at": "2026-10-05T08:27:00Z"
     },
     {
       "name": "Crypto-Scrapping",
@@ -133,10 +133,10 @@
     }
   ],
   "events": {
-    "total": 4,
+    "total": 6,
     "types": {
-      "CreateEvent": 3,
-      "PushEvent": 1
+      "PushEvent": 3,
+      "CreateEvent": 3
     }
   }
 }
