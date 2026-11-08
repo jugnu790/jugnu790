@@ -1,12 +1,12 @@
 {
   "username": "jugnu790",
   "range": {
-    "from": "2025-11-07T23:27:35.594304+00:00",
-    "to": "2026-11-07T23:27:35.594304+00:00"
+    "from": "2025-11-08T04:44:27.656911+00:00",
+    "to": "2026-11-08T04:44:27.656911+00:00"
   },
   "collection": {
-    "startedAt": "2025-11-07T23:27:35Z",
-    "endedAt": "2026-11-07T23:27:35Z",
+    "startedAt": "2025-11-08T04:44:27Z",
+    "endedAt": "2026-11-08T04:44:27Z",
     "totalCommitContributions": 20,
     "restrictedContributionsCount": 0,
     "commitContributionsByRepository": [
@@ -39,22 +39,6 @@
     "contributionCalendar": {
       "totalContributions": 23,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "date": "2025-11-07",
-              "contributionCount": 0,
-              "weekday": 5,
-              "color": "#ebedf0"
-            },
-            {
-              "date": "2025-11-08",
-              "contributionCount": 0,
-              "weekday": 6,
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2443,6 +2427,16 @@
               "date": "2026-11-07",
               "contributionCount": 0,
               "weekday": 6,
+              "color": "#ebedf0"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "date": "2026-11-08",
+              "contributionCount": 0,
+              "weekday": 0,
               "color": "#ebedf0"
             }
           ]
